@@ -1,0 +1,86 @@
+// layout
+$mobile: 375px;
+$desktop: 1440px;
+$fontSizeMain: 16px;
+
+// colors primary
+$primarySoftRed: hsl(7, 99%, 70%);
+$primaryYellow: hsl(51, 100%, 49%);
+$primaryDarkDesaturated: hsl(167, 40%, 24%);
+$primaryDarkblue: hsl(198, 62%, 26%);
+$primaryDarkModerateCyan: hsl(168, 34%, 41%);
+$primaryWhite: hsl(0, 0%, 100%);
+
+// colors neutral
+$neutralDarkDesaturatedblue: hsl(212, 27%, 19%);
+$neutralVeryDarkGrayishblue: hsl(213, 9%, 39%);
+$neutralDarkGrayishblue: hsl(232, 10%, 55%);
+$neutralGrayishblue: hsl(210, 4%, 67%);
+
+// font-family: 'Barlow', sans-serif;
+// font-family: 'Fraunces', serif;
+
+* {
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;;
+}
+
+nav {
+    position: absolute;
+    display: none;
+}
+
+
+
+
+header {
+    @mixin absoluteHeader($topValue){
+        position: absolute;
+        top: $topValue;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+
+    position: relative;
+    height: 80vh;
+    width:100%;
+    background-image: url("/images/mobile/image-header.jpg");
+    background-size: cover;
+    background-position: center;
+    h1{
+        @include absoluteHeader(30%);
+        font-size: 36px;
+        text-transform: uppercase;
+        text-align: center;   
+        font-family: 'Fraunces', serif;
+        color: $primaryWhite;
+    }
+    img.arrow{
+        @include absoluteHeader(50%);
+        height: 72px;
+    }
+    .navbar{
+        $positionValue:32px;
+
+        position: relative;
+        padding-top: $positionValue;
+        display:block;
+        width: 100%;
+        margin-right: 0;
+        .burger{
+        position: absolute;
+        right: $positionValue;
+        }
+        .logo{
+            position: absolute;
+            left: $positionValue;
+            }
+    }
+    
+    }
+
+

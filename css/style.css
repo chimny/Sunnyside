@@ -1,0 +1,54 @@
+* {
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Barlow", sans-serif;
+}
+
+nav {
+  position: absolute;
+  display: none;
+}
+
+header {
+  position: relative;
+  height: 80vh;
+  width: 100%;
+  background-image: url("/images/mobile/image-header.jpg");
+  background-size: cover;
+  background-position: center;
+}
+header h1 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Fraunces", serif;
+  color: white;
+}
+header img.arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 72px;
+}
+header .navbar {
+  position: relative;
+  padding-top: 32px;
+  display: block;
+  width: 100%;
+  margin-right: 0;
+}
+header .navbar .burger {
+  position: absolute;
+  right: 32px;
+}
+header .navbar .logo {
+  position: absolute;
+  left: 32px;
+}
