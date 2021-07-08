@@ -6,12 +6,17 @@
   font-family: "Barlow", sans-serif;
 }
 
+.active {
+  display: block;
+}
+
 nav {
   position: absolute;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: white;
+  display: none;
   width: 80vw;
   margin: 0 auto;
   z-index: 2;

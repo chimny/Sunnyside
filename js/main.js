@@ -1,7 +1,8 @@
 const burgerButton = document.querySelector(".burger");
+const nav = document.querySelector("nav");
 
 const menuTrigger = () => {
-    console.log("działa");
+    nav.classList.toggle("active");
 };
 
 burgerButton.addEventListener("click", menuTrigger);

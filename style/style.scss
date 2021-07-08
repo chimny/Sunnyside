@@ -34,9 +34,15 @@ $neutralGrayishblue: hsl(210, 4%, 67%);
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.active{
+    display:block;
+}
+
 nav {
     @include absolutePositioner(40%);
     background-color: $primaryWhite;
+    display:none;
     width: 80vw;
     margin: 0 auto;
     z-index: 2;
