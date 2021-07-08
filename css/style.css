@@ -8,7 +8,28 @@
 
 nav {
   position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  width: 80vw;
+  margin: 0 auto;
+  z-index: 2;
+}
+nav .container {
+  width: 100%;
+}
+nav img {
   display: none;
+}
+nav li {
+  list-style: none;
+  text-align: center;
+  padding: 1rem;
+}
+nav li a {
+  text-decoration: none;
+  color: #818498;
 }
 
 header {
@@ -47,6 +68,7 @@ header .navbar {
 header .navbar .burger {
   position: absolute;
   right: 32px;
+  z-index: 10;
 }
 header .navbar .logo {
   position: absolute;

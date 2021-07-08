@@ -25,62 +25,73 @@ $neutralGrayishblue: hsl(210, 4%, 67%);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Barlow', sans-serif;;
+    font-family: "Barlow", sans-serif;
 }
 
-nav {
+@mixin absolutePositioner($topValue) {
     position: absolute;
-    display: none;
+    top: $topValue;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-
-
-
+nav {
+    @include absolutePositioner(40%);
+    background-color: $primaryWhite;
+    width: 80vw;
+    margin: 0 auto;
+    z-index: 2;
+    .container{
+     width:   100%;
+    }
+    img {
+        display: none;
+    }
+    li {
+        list-style: none;
+        text-align: center;
+        padding: 1rem;
+        a {
+            text-decoration: none;
+            color: $neutralDarkGrayishblue;
+        }
+    }
+}
 
 header {
-    @mixin absoluteHeader($topValue){
-        position: absolute;
-        top: $topValue;
-        left: 50%;
-        transform: translate(-50%,-50%);
-    }
-
-
     position: relative;
     height: 80vh;
-    width:100%;
+    width: 100%;
     background-image: url("/images/mobile/image-header.jpg");
     background-size: cover;
     background-position: center;
-    h1{
-        @include absoluteHeader(30%);
+    h1 {
+        @include absolutePositioner(30%);
         font-size: 36px;
         text-transform: uppercase;
-        text-align: center;   
-        font-family: 'Fraunces', serif;
+        text-align: center;
+        font-family: "Fraunces", serif;
         color: $primaryWhite;
     }
-    img.arrow{
-        @include absoluteHeader(50%);
+    img.arrow {
+        @include absolutePositioner(50%);
         height: 72px;
     }
-    .navbar{
-        $positionValue:32px;
+    .navbar {
+        $positionValue: 32px;
 
         position: relative;
         padding-top: $positionValue;
-        display:block;
+        display: block;
         width: 100%;
         margin-right: 0;
-        .burger{
-        position: absolute;
-        right: $positionValue;
+        .burger {
+            position: absolute;
+            right: $positionValue;
+            z-index: 10;
         }
-        .logo{
+        .logo {
             position: absolute;
             left: $positionValue;
-            }
+        }
     }
-    
-    }
-
-
+}
