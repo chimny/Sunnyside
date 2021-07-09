@@ -1,5 +1,6 @@
 // layout
-$mobile: 376px;
+$mobile: 375px;
+$mobilebreakpoint: 376px;
 $desktop: 1440px;
 $fontSizeMain: 16px;
 $positionValue: 32px;
@@ -29,6 +30,16 @@ $neutralGrayishblue: hsl(210, 4%, 67%);
     font-family: "Barlow", sans-serif;
 }
 
+* img {
+    overflow: hidden;
+}
+
+.wrapper {
+    max-width: $mobile;
+
+    margin: 0 auto;
+}
+
 // mixins
 @mixin absolutePositioner($topValue) {
     position: absolute;
@@ -45,7 +56,7 @@ $neutralGrayishblue: hsl(210, 4%, 67%);
 header {
     position: relative;
     height: 80vh;
-    width: 100%;
+    width: 100vw;
     background-image: url("/images/mobile/image-header.jpg");
     background-size: cover;
     background-position: center;
@@ -115,15 +126,14 @@ nav {
     }
 }
 
-@media (min-width: $mobile) {
+@media (min-width: $mobilebreakpoint) {
     header {
         background-image: url("/images/desktop/image-header.jpg");
         background-repeat: no-repeat;
         background-position: 0% 70%;
     }
     .wrapper {
-        max-width: 1440px;
-        margin: 0 auto;
+        max-width: $mobile;
     }
     nav.mobile,
     img.burger {

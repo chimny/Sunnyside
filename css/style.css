@@ -6,6 +6,15 @@
   font-family: "Barlow", sans-serif;
 }
 
+* img {
+  overflow: hidden;
+}
+
+.wrapper {
+  max-width: 375px;
+  margin: 0 auto;
+}
+
 .active {
   display: block;
 }
@@ -13,7 +22,7 @@
 header {
   position: relative;
   height: 80vh;
-  width: 100%;
+  width: 100vw;
   background-image: url("/images/mobile/image-header.jpg");
   background-size: cover;
   background-position: center;
@@ -98,8 +107,7 @@ nav li:last-child a {
   }
 
   .wrapper {
-    max-width: 1440px;
-    margin: 0 auto;
+    max-width: 375px;
   }
 
   nav.mobile,
