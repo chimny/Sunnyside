@@ -134,11 +134,9 @@ ul {
     }
 
     li:last-child {
-        width: 50%;
         margin: 0 auto;
         background: $primaryYellow;
         border-radius: 50px;
-
         a {
             text-transform: uppercase;
             color: $neutralDarkDesaturatedblue;
@@ -200,6 +198,9 @@ ul {
 
             a {
                 color: $primaryWhite;
+                &:hover {
+                    background: $primaryDarkModerateCyan;
+                }
             }
         }
 

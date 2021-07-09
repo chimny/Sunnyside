@@ -91,7 +91,6 @@ ul li a {
   color: #818498;
 }
 ul li:last-child {
-  width: 50%;
   margin: 0 auto;
   background: #fad400;
   border-radius: 50px;
@@ -155,6 +154,9 @@ ul li:last-child a {
   }
   ul li a {
     color: white;
+  }
+  ul li a:hover {
+    background: #458c7e;
   }
   ul li:last-child {
     margin: 0 auto;
