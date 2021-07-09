@@ -30,7 +30,6 @@ $neutralGrayishblue: hsl(210, 4%, 67%);
     font-family: "Barlow", sans-serif;
 }
 
-
 .wrapper {
     max-width: $mobile;
     margin: 0 auto;
@@ -57,19 +56,19 @@ header {
     background-size: cover;
     background-position: center;
 
-    h1 {
-        @include absolutePositioner(30%);
-        letter-spacing: 0.5rem;
-        font-size: 36px;
-        text-transform: uppercase;
-        text-align: center;
-        font-family: "Fraunces", serif;
-        color: $primaryWhite;
-    }
-
     .cta {
         @include absolutePositioner(50%);
         margin: 0 auto;
+
+        h1 {
+            @include absolutePositioner(30%);
+            letter-spacing: 0.5rem;
+            font-size: 36px;
+            text-transform: uppercase;
+            text-align: center;
+            font-family: "Fraunces", serif;
+            color: $primaryWhite;
+        }
 
         img.arrow {
             margin-top: 7rem;
@@ -77,13 +76,11 @@ header {
         }
     }
 
-
     .navbar {
-        $positionValue: 32px;
         position: relative;
-        padding-top: $positionValue;
-        display: block;
-        width: 100%;
+        top: $positionValue;
+        width: 100vw;
+        height: 80px;
         margin-right: 0;
 
         .burger {
@@ -94,16 +91,16 @@ header {
 
         .logo {
             position: absolute;
-            top: $positionValue;
             left: $positionValue;
         }
     }
 }
 
-nav {
+ul {
     display: none;
-    @include absolutePositioner(35%);
+    @include absolutePositioner(12rem);
     background-color: $primaryWhite;
+    height: 14rem;
     width: 80vw;
     margin: 0 auto;
     z-index: 2;
@@ -141,18 +138,15 @@ nav {
 }
 
 @media (min-width: $mobilebreakpoint) {
-
     .wrapper {
         max-width: $desktop;
     }
-
 
     header {
         background-image: url("/images/desktop/image-header.jpg");
         background-position: 0% 50%;
         max-width: $desktop;
         min-height: 85vh;
-
 
         .cta {
             @include absolutePositioner(30%);
@@ -164,43 +158,29 @@ nav {
 
             img.arrow {
                 height: 120px;
-                @include absolutePositioner(30%);
+                @include absolutePositioner(20%);
             }
         }
-
-
-
-
     }
 
     img.burger {
         display: none;
     }
 
-    nav {
+    ul {
         display: block;
-        background-color: transparent;
-        top: $positionValue;
+        position: absolute;
+        top: 0;
         right: 0;
-        width: 80vw;
-        margin: 0 auto;
-        z-index: 2;
-
-        .container {
-            padding: 1rem 0;
-        }
-
-        img {
-            display: none;
-        }
-
-        ul {
-            display: inline;
-        }
+        height: 0;
+        transform: translate(0);
 
         li {
+            margin-right: 32px;
+            text-align: center;
+            padding: 8px 16px;
             display: inline-block;
-            padding: 0.5rem 1rem;
+            padding: 0;
 
             a {
                 color: $primaryWhite;
@@ -219,8 +199,4 @@ nav {
             }
         }
     }
-
-
-
-
 }

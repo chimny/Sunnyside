@@ -23,7 +23,14 @@ header {
   background-size: cover;
   background-position: center;
 }
-header h1 {
+header .cta {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+}
+header .cta h1 {
   position: absolute;
   top: 30%;
   left: 50%;
@@ -35,22 +42,15 @@ header h1 {
   font-family: "Fraunces", serif;
   color: white;
 }
-header .cta {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: 0 auto;
-}
 header .cta img.arrow {
   margin-top: 7rem;
   height: 72px;
 }
 header .navbar {
   position: relative;
-  padding-top: 32px;
-  display: block;
-  width: 100%;
+  top: 32px;
+  width: 100vw;
+  height: 80px;
   margin-right: 0;
 }
 header .navbar .burger {
@@ -60,43 +60,43 @@ header .navbar .burger {
 }
 header .navbar .logo {
   position: absolute;
-  top: 32px;
   left: 32px;
 }
 
-nav {
+ul {
   display: none;
   position: absolute;
-  top: 35%;
+  top: 12rem;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: white;
+  height: 14rem;
   width: 80vw;
   margin: 0 auto;
   z-index: 2;
 }
-nav .container {
+ul .container {
   padding: 1rem 0;
 }
-nav img {
+ul img {
   display: none;
 }
-nav li {
+ul li {
   list-style: none;
   text-align: center;
   padding: 1rem;
 }
-nav li a {
+ul li a {
   text-decoration: none;
   color: #818498;
 }
-nav li:last-child {
+ul li:last-child {
   width: 50%;
   margin: 0 auto;
   background: #fad400;
   border-radius: 50px;
 }
-nav li:last-child a {
+ul li:last-child a {
   text-transform: uppercase;
   color: #23303e;
 }
@@ -125,7 +125,7 @@ nav li:last-child a {
   header .cta img.arrow {
     height: 120px;
     position: absolute;
-    top: 30%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -134,39 +134,32 @@ nav li:last-child a {
     display: none;
   }
 
-  nav {
+  ul {
     display: block;
-    background-color: transparent;
-    top: 32px;
+    position: absolute;
+    top: 0;
     right: 0;
-    width: 80vw;
-    margin: 0 auto;
-    z-index: 2;
+    height: 0;
+    transform: translate(0);
   }
-  nav .container {
-    padding: 1rem 0;
-  }
-  nav img {
-    display: none;
-  }
-  nav ul {
-    display: inline;
-  }
-  nav li {
+  ul li {
+    margin-right: 32px;
+    text-align: center;
+    padding: 8px 16px;
     display: inline-block;
-    padding: 0.5rem 1rem;
+    padding: 0;
   }
-  nav li a {
+  ul li a {
     color: white;
   }
-  nav li:last-child {
+  ul li:last-child {
     width: 10rem;
     margin: 0 auto;
     background: white;
     border-radius: 50px;
   }
-  nav li:last-child a {
+  ul li:last-child a {
     text-transform: uppercase;
     color: #23303e;
   }
-}/*# sourceMappingURL=style.css.map */
+}

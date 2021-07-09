@@ -1,8 +1,8 @@
 const burgerButton = document.querySelector(".burger");
-const nav = document.querySelector("nav");
+const ul = document.querySelector("ul");
 
 const menuTrigger = () => {
-    nav.classList.toggle("active");
+    ul.classList.toggle("active");
 };
 
 burgerButton.addEventListener("click", menuTrigger);
