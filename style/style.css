@@ -132,4 +132,38 @@ nav li:last-child a {
   img.burger {
     display: none;
   }
+
+  nav {
+    display: block;
+    background-color: transparent;
+    width: 80vw;
+    margin: 0 auto;
+    z-index: 2;
+  }
+  nav .container {
+    padding: 1rem 0;
+  }
+  nav img {
+    display: none;
+  }
+  nav ul {
+    display: inline;
+  }
+  nav li {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+  }
+  nav li a {
+    color: white;
+  }
+  nav li:last-child {
+    width: 10rem;
+    margin: 0 auto;
+    background: white;
+    border-radius: 50px;
+  }
+  nav li:last-child a {
+    text-transform: uppercase;
+    color: #23303e;
+  }
 }/*# sourceMappingURL=style.css.map */

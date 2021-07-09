@@ -176,14 +176,49 @@ nav {
         display: none;
     }
 
+    nav {
+        display: block;
+        background-color: transparent;
 
-    // nav.desktop {
-    //     position: relative;
-    //     right: 0;
-    //     top: 0;
-    //     position: static;
-    //     display: block;
-    // }
+        width: 80vw;
+        margin: 0 auto;
+        z-index: 2;
+
+        .container {
+            padding: 1rem 0;
+        }
+
+        img {
+            display: none;
+        }
+
+        ul {
+            display: inline;
+        }
+
+        li {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+
+            a {
+                color: $primaryWhite;
+            }
+        }
+
+        li:last-child {
+            width: 10rem;
+            margin: 0 auto;
+            background: $primaryWhite;
+            border-radius: 50px;
+
+            a {
+                text-transform: uppercase;
+                color: $neutralDarkDesaturatedblue;
+            }
+        }
+    }
+
+
 
 
 }
