@@ -60,6 +60,7 @@ header .navbar .burger {
 }
 header .navbar .logo {
   position: absolute;
+  top: 32px;
   left: 32px;
 }
 
@@ -136,6 +137,8 @@ nav li:last-child a {
   nav {
     display: block;
     background-color: transparent;
+    top: 32px;
+    right: 0;
     width: 80vw;
     margin: 0 auto;
     z-index: 2;
