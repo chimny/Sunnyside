@@ -1,7 +1,8 @@
 // layout
-$mobile: 375px;
+$mobile: 376px;
 $desktop: 1440px;
 $fontSizeMain: 16px;
+$positionValue: 32px;
 
 // colors primary
 $primarySoftRed: hsl(7, 99%, 70%);
@@ -28,6 +29,7 @@ $neutralGrayishblue: hsl(210, 4%, 67%);
     font-family: "Barlow", sans-serif;
 }
 
+// mixins
 @mixin absolutePositioner($topValue) {
     position: absolute;
     top: $topValue;
@@ -35,32 +37,9 @@ $neutralGrayishblue: hsl(210, 4%, 67%);
     transform: translate(-50%, -50%);
 }
 
-.active{
-    display:block;
-}
-
-nav {
-    @include absolutePositioner(40%);
-    background-color: $primaryWhite;
-    display:none;
-    width: 80vw;
-    margin: 0 auto;
-    z-index: 2;
-    .container{
-     width:   100%;
-    }
-    img {
-        display: none;
-    }
-    li {
-        list-style: none;
-        text-align: center;
-        padding: 1rem;
-        a {
-            text-decoration: none;
-            color: $neutralDarkGrayishblue;
-        }
-    }
+// class to toggle burger menu
+.active {
+    display: block;
 }
 
 header {
@@ -99,5 +78,55 @@ header {
             position: absolute;
             left: $positionValue;
         }
+    }
+}
+
+nav {
+    @include absolutePositioner(35%);
+    background-color: $primaryWhite;
+    display: none;
+    width: 80vw;
+    margin: 0 auto;
+    z-index: 2;
+    .container {
+        padding: 1rem 0;
+    }
+    img {
+        display: none;
+    }
+    li {
+        list-style: none;
+        text-align: center;
+        padding: 1rem;
+        a {
+            text-decoration: none;
+            color: $neutralDarkGrayishblue;
+        }
+    }
+    li:last-child {
+        width: 50%;
+        margin: 0 auto;
+        background: $primaryYellow;
+        border-radius: 50px;
+        a {
+            text-transform: uppercase;
+            color: $neutralDarkDesaturatedblue;
+        }
+    }
+}
+
+@media (min-width: $mobile) {
+    header {
+        background-image: url("/images/desktop/image-header.jpg");
+        background-repeat: no-repeat;
+        background-position: 0% 70%;
+    }
+    .wrapper {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+    nav.mobile,
+    img.burger {
+        display: none;
     }
 }
