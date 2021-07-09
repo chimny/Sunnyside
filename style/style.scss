@@ -30,13 +30,9 @@ $neutralGrayishblue: hsl(210, 4%, 67%);
     font-family: "Barlow", sans-serif;
 }
 
-* img {
-    overflow: hidden;
-}
 
 .wrapper {
     max-width: $mobile;
-
     margin: 0 auto;
 }
 
@@ -60,31 +56,42 @@ header {
     background-image: url("/images/mobile/image-header.jpg");
     background-size: cover;
     background-position: center;
+
     h1 {
         @include absolutePositioner(30%);
+        letter-spacing: 0.5rem;
         font-size: 36px;
         text-transform: uppercase;
         text-align: center;
         font-family: "Fraunces", serif;
         color: $primaryWhite;
     }
-    img.arrow {
+
+    .cta {
         @include absolutePositioner(50%);
-        height: 72px;
+        margin: 0 auto;
+
+        img.arrow {
+            margin-top: 7rem;
+            height: 72px;
+        }
     }
+
+
     .navbar {
         $positionValue: 32px;
-
         position: relative;
         padding-top: $positionValue;
         display: block;
         width: 100%;
         margin-right: 0;
+
         .burger {
             position: absolute;
             right: $positionValue;
             z-index: 10;
         }
+
         .logo {
             position: absolute;
             left: $positionValue;
@@ -93,32 +100,38 @@ header {
 }
 
 nav {
+    display: none;
     @include absolutePositioner(35%);
     background-color: $primaryWhite;
-    display: none;
     width: 80vw;
     margin: 0 auto;
     z-index: 2;
+
     .container {
         padding: 1rem 0;
     }
+
     img {
         display: none;
     }
+
     li {
         list-style: none;
         text-align: center;
         padding: 1rem;
+
         a {
             text-decoration: none;
             color: $neutralDarkGrayishblue;
         }
     }
+
     li:last-child {
         width: 50%;
         margin: 0 auto;
         background: $primaryYellow;
         border-radius: 50px;
+
         a {
             text-transform: uppercase;
             color: $neutralDarkDesaturatedblue;
@@ -127,16 +140,50 @@ nav {
 }
 
 @media (min-width: $mobilebreakpoint) {
+
+    .wrapper {
+        max-width: $desktop;
+    }
+
+
     header {
         background-image: url("/images/desktop/image-header.jpg");
-        background-repeat: no-repeat;
-        background-position: 0% 70%;
+        background-position: 0% 50%;
+        max-width: $desktop;
+        min-height: 85vh;
+
+
+        .cta {
+            @include absolutePositioner(30%);
+
+            h1 {
+                display: block;
+                width: 50vw;
+            }
+
+            img.arrow {
+                height: 120px;
+                @include absolutePositioner(30%);
+            }
+        }
+
+
+
+
     }
-    .wrapper {
-        max-width: $mobile;
-    }
-    nav.mobile,
+
     img.burger {
         display: none;
     }
+
+
+    // nav.desktop {
+    //     position: relative;
+    //     right: 0;
+    //     top: 0;
+    //     position: static;
+    //     display: block;
+    // }
+
+
 }

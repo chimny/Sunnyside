@@ -6,10 +6,6 @@
   font-family: "Barlow", sans-serif;
 }
 
-* img {
-  overflow: hidden;
-}
-
 .wrapper {
   max-width: 375px;
   margin: 0 auto;
@@ -32,17 +28,22 @@ header h1 {
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
+  letter-spacing: 0.5rem;
   font-size: 36px;
   text-transform: uppercase;
   text-align: center;
   font-family: "Fraunces", serif;
   color: white;
 }
-header img.arrow {
+header .cta {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  margin: 0 auto;
+}
+header .cta img.arrow {
+  margin-top: 7rem;
   height: 72px;
 }
 header .navbar {
@@ -63,12 +64,12 @@ header .navbar .logo {
 }
 
 nav {
+  display: none;
   position: absolute;
   top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: white;
-  display: none;
   width: 80vw;
   margin: 0 auto;
   z-index: 2;
@@ -100,18 +101,35 @@ nav li:last-child a {
 }
 
 @media (min-width: 376px) {
+  .wrapper {
+    max-width: 1440px;
+  }
+
   header {
     background-image: url("/images/desktop/image-header.jpg");
-    background-repeat: no-repeat;
-    background-position: 0% 70%;
+    background-position: 0% 50%;
+    max-width: 1440px;
+    min-height: 85vh;
+  }
+  header .cta {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  header .cta h1 {
+    display: block;
+    width: 50vw;
+  }
+  header .cta img.arrow {
+    height: 120px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
-  .wrapper {
-    max-width: 375px;
-  }
-
-  nav.mobile,
-img.burger {
+  img.burger {
     display: none;
   }
-}
+}/*# sourceMappingURL=style.css.map */
