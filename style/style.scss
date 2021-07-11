@@ -37,10 +37,10 @@ $neutralGrayishblue: hsl(210, 4%, 67%);
 
 // mixins
 @mixin absolutePositioner($topValue) {
-    position: absolute;
-    top: $topValue;
-    left: 50%;
     transform: translate(-50%, -50%);
+    top: $topValue;
+    position: absolute;
+    left: 50%;
 }
 
 // class to toggle burger menu
@@ -49,29 +49,29 @@ $neutralGrayishblue: hsl(210, 4%, 67%);
 }
 
 header {
+    width: 100vw;
     position: relative;
     height: 80vh;
-    width: 100vw;
-    background-image: url("/images/mobile/image-header.jpg");
     background-size: cover;
     background-position: center;
+    background-image: url("/images/mobile/image-header.jpg");
 
     .cta {
-        margin: 0 auto;
-        position: absolute;
-        top: 50%;
-        left: 50%;
         transform: translate(-50%, -50%);
+        top: 50%;
+        position: absolute;
+        margin: 0 auto;
+        left: 50%;
 
         h1 {
-            position: absolute;
-            top: 30%;
-            left: 50%;
             transform: translate(-50%, -50%);
-            letter-spacing: 0.5rem;
-            font-size: 36px;
+            top: 30%;
             text-transform: uppercase;
             text-align: center;
+            position: absolute;
+            letter-spacing: 0.5rem;
+            left: 50%;
+            font-size: 36px;
             font-family: "Fraunces", serif;
             color: $primaryWhite;
         }
@@ -83,16 +83,16 @@ header {
     }
 
     .navbar {
-        position: relative;
-        top: $positionValue;
         width: 100%;
-        height: 80px;
+        top: $positionValue;
+        position: relative;
         margin-right: 0;
+        height: 80px;
 
         .burger {
-            position: absolute;
-            right: $positionValue;
             z-index: 10;
+            right: $positionValue;
+            position: absolute;
         }
 
         .logo {
@@ -103,17 +103,17 @@ header {
 }
 
 ul {
-    display: none;
-    font-family: "Fraunces", serif;
-    position: absolute;
-    top: 12rem;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: $primaryWhite;
-    height: 14rem;
-    width: 80vw;
-    margin: 0 auto;
     z-index: 2;
+    width: 80vw;
+    transform: translate(-50%, -50%);
+    top: 12rem;
+    position: absolute;
+    margin: 0 auto;
+    left: 50%;
+    height: 14rem;
+    font-family: "Fraunces", serif;
+    display: none;
+    background-color: $primaryWhite;
 
     .container {
         padding: 1rem 0;
@@ -124,26 +124,26 @@ ul {
     }
 
     li {
-        list-style: none;
-        text-align: center;
         width: 50%;
+        text-align: center;
         margin: 0 auto;
+        list-style: none;
 
         a {
-            text-decoration: none;
-            display: block;
-            padding: 1rem;
             width: 100%;
+            text-decoration: none;
+            padding: 1rem;
+            display: block;
             color: $neutralDarkGrayishblue;
         }
     }
 
     li:last-child {
         a {
-            background: $primaryYellow;
-            border-radius: 50px;
             text-transform: uppercase;
             color: $neutralDarkDesaturatedblue;
+            border-radius: 50px;
+            background: $primaryYellow;
         }
     }
 }
@@ -154,23 +154,23 @@ ul {
     }
 
     header {
-        background-image: url("/images/desktop/image-header.jpg");
-        background-position: 0% 50%;
-        max-width: $desktop;
         min-height: 85vh;
+        max-width: $desktop;
+        background-position: 0% 50%;
+        background-image: url("/images/desktop/image-header.jpg");
 
         .cta {
             @include absolutePositioner(30%);
 
             h1 {
-                display: block;
                 width: 50vw;
+                display: block;
             }
 
             img.arrow {
+                margin-top: 120px;
                 height: 120px;
                 @include absolutePositioner(50%);
-                margin-top: 120px;
             }
         }
     }
@@ -180,18 +180,18 @@ ul {
     }
 
     ul {
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        transform: translate(0);
-        padding-right: 64px;
-        text-align: right;
-        background-color: transparent;
-        height: 14rem;
-        width: auto;
-        margin: 0 auto;
         z-index: 2;
+        width: auto;
+        transform: translate(0);
+        top: 0;
+        text-align: right;
+        right: 0;
+        position: absolute;
+        padding-right: 64px;
+        margin: 0 auto;
+        height: 14rem;
+        display: block;
+        background-color: transparent;
 
         .container {
             padding: 1rem 0;
@@ -202,28 +202,27 @@ ul {
         }
 
         li {
-            display: inline;
-            list-style: none;
-            text-align: center;
             width: auto;
+            text-align: center;
             margin: 0 1rem 0 auto;
+            list-style: none;
+            display: inline;
 
             a {
-                color: $primaryWhite;
-                text-decoration: none;
-                display: inline;
-                padding: 1rem;
                 width: auto;
+                text-decoration: none;
+                padding: 1rem;
+                display: inline;
+                color: $primaryWhite;
             }
         }
 
         li:last-child {
             a {
-                color: $neutralDarkDesaturatedblue;
-
-                background: $primaryWhite;
-                border-radius: 50px;
                 text-transform: uppercase;
+                color: $neutralDarkDesaturatedblue;
+                border-radius: 50px;
+                background: $primaryWhite;
             }
         }
     }
