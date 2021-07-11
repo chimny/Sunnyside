@@ -65,6 +65,7 @@ header .navbar .logo {
 
 ul {
   display: none;
+  font-family: "Fraunces", serif;
   position: absolute;
   top: 12rem;
   left: 50%;
@@ -84,18 +85,19 @@ ul img {
 ul li {
   list-style: none;
   text-align: center;
-  padding: 1rem;
+  width: 50%;
+  margin: 0 auto;
 }
 ul li a {
   text-decoration: none;
+  display: block;
+  padding: 1rem;
+  width: 100%;
   color: #818498;
 }
-ul li:last-child {
-  margin: 0 auto;
+ul li:last-child a {
   background: #fad400;
   border-radius: 50px;
-}
-ul li:last-child a {
   text-transform: uppercase;
   color: #23303e;
 }
@@ -124,9 +126,10 @@ ul li:last-child a {
   header .cta img.arrow {
     height: 120px;
     position: absolute;
-    top: 20%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    margin-top: 120px;
   }
 
   img.burger {
@@ -134,39 +137,43 @@ ul li:last-child a {
   }
 
   ul {
-    left: 0;
-    right: 0;
-    width: 100%;
-    text-align: right;
     display: block;
     position: absolute;
-    background-color: transparent;
-    top: -20px;
+    top: 0;
+    right: 0;
+    transform: translate(0);
     padding-right: 64px;
-    transform: none;
+    text-align: right;
+    background-color: transparent;
+    height: 14rem;
+    width: auto;
+    margin: 0 auto;
+    z-index: 2;
+  }
+  ul .container {
+    padding: 1rem 0;
+  }
+  ul img {
+    display: none;
   }
   ul li {
-    margin-right: 32px;
+    display: inline;
+    list-style: none;
     text-align: center;
-    padding: 8px 16px;
-    display: inline-block;
-    padding: 0;
+    width: auto;
+    margin: 0 1rem 0 auto;
   }
   ul li a {
     color: white;
-  }
-  ul li a:hover {
-    background: #458c7e;
-  }
-  ul li:last-child {
-    margin: 0 auto;
-    background: white;
-    border-radius: 50px;
+    text-decoration: none;
+    display: inline;
+    padding: 1rem;
     width: auto;
-    padding: 20px;
   }
   ul li:last-child a {
-    text-transform: uppercase;
     color: #23303e;
+    background: white;
+    border-radius: 50px;
+    text-transform: uppercase;
   }
 }
