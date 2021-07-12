@@ -1,26 +1,5 @@
-// layout
-$mobile: 375px;
-$mobilebreakpoint: 376px;
-$desktop: 1440px;
-$fontSizeMain: 16px;
-$positionValue: 32px;
+@use './variables.scss'as v;
 
-// colors primary
-$primarySoftRed: hsl(7, 99%, 70%);
-$primaryYellow: hsl(51, 100%, 49%);
-$primaryDarkDesaturated: hsl(167, 40%, 24%);
-$primaryDarkblue: hsl(198, 62%, 26%);
-$primaryDarkModerateCyan: hsl(168, 34%, 41%);
-$primaryWhite: hsl(0, 0%, 100%);
-
-// colors neutral
-$neutralDarkDesaturatedblue: hsl(212, 27%, 19%);
-$neutralVeryDarkGrayishblue: hsl(213, 9%, 39%);
-$neutralDarkGrayishblue: hsl(232, 10%, 55%);
-$neutralGrayishblue: hsl(210, 4%, 67%);
-
-// font-family: 'Barlow', sans-serif;
-// font-family: 'Fraunces', serif;
 
 * {
     font-size: 18px;
@@ -73,7 +52,7 @@ header {
             left: 50%;
             font-size: 36px;
             font-family: "Fraunces", serif;
-            color: $primaryWhite;
+            color: v.$primaryWhite;
         }
 
         img.arrow {
@@ -91,13 +70,13 @@ header {
 
         .burger {
             z-index: 10;
-            right: $positionValue;
+            right: v.$positionValue;
             position: absolute;
         }
 
         .logo {
             position: absolute;
-            left: $positionValue;
+            left: v.$positionValue;
         }
     }
 }
@@ -113,7 +92,7 @@ ul {
     height: 14rem;
     font-family: "Fraunces", serif;
     display: none;
-    background-color: $primaryWhite;
+    background-color: v.$primaryWhite;
 
     .container {
         padding: 1rem 0;
@@ -134,28 +113,28 @@ ul {
             text-decoration: none;
             padding: 1rem;
             display: block;
-            color: $neutralDarkGrayishblue;
+            color: v.$neutralDarkGrayishblue;
         }
     }
 
     li:last-child {
         a {
             text-transform: uppercase;
-            color: $neutralDarkDesaturatedblue;
+            color: v.$neutralDarkDesaturatedblue;
             border-radius: 50px;
-            background: $primaryYellow;
+            background: v.$primaryYellow;
         }
     }
 }
 
-@media (min-width: $mobilebreakpoint) {
+@media (min-width: v.$mobilebreakpoint) {
     .wrapper {
-        max-width: $desktop;
+        max-width: v.$desktop;
     }
 
     header {
         min-height: 85vh;
-        max-width: $desktop;
+        max-width: v.$desktop;
         background-position: 0% 50%;
         background-image: url("/images/desktop/image-header.jpg");
 
@@ -213,16 +192,16 @@ ul {
                 text-decoration: none;
                 padding: 1rem;
                 display: inline;
-                color: $primaryWhite;
+                color: v.$primaryWhite;
             }
         }
 
         li:last-child {
             a {
                 text-transform: uppercase;
-                color: $neutralDarkDesaturatedblue;
+                color: v.$neutralDarkDesaturatedblue;
                 border-radius: 50px;
-                background: $primaryWhite;
+                background: v.$primaryWhite;
             }
         }
     }
