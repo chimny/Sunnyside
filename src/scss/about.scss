@@ -10,6 +10,7 @@ img {
 
 .contentBox {
     padding: 2rem 0;
+    position: relative;
 
     h2 {
         font-family: "Fraunces", serif;
@@ -22,9 +23,30 @@ img {
         color: v.$neutralVeryDarkGrayishblue;
     }
 
-    a {
-        color: v.$neutralDarkDesaturatedblue;
-        font-weight: 700;
+    button {
+        position: relative;
+        background: transparent;
+        border: none;
+        box-sizing: content-box;
+        color: black;
+        display: block;
+        font-family: "Fraunces", serif;
+        font-weight: 900;
+        margin: 0 auto;
         text-transform: uppercase;
+        width: 8rem;
     }
+}
+
+.additionalPoints {
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.cherry {
+    background-image: url("../images/mobile/image-graphic-design.jpg");
+}
+.orange {
+    background-image: url("../images/mobile/image-photography.jpg");
 }

@@ -197,6 +197,7 @@ img {
 
 .contentBox {
   padding: 2rem 0;
+  position: relative;
 }
 .contentBox h2 {
   font-family: "Fraunces", serif;
@@ -207,10 +208,32 @@ img {
   padding: 1rem 1rem;
   color: #5a636c;
 }
-.contentBox a {
-  color: #23303e;
-  font-weight: 700;
+.contentBox button {
+  position: relative;
+  background: transparent;
+  border: none;
+  box-sizing: content-box;
+  color: black;
+  display: block;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  margin: 0 auto;
   text-transform: uppercase;
+  width: 8rem;
+}
+
+.additionalPoints {
+  height: 70vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.cherry {
+  background-image: url("/image-graphic-design.b97e81ff.jpg");
+}
+
+.orange {
+  background-image: url("/image-photography.6562ae8a.jpg");
 }
 
 /*# sourceMappingURL=/style.a6dae8f7.css.map */
