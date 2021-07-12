@@ -173,6 +173,13 @@ ul li:last-child a {
     color: #23303e;
     text-transform: uppercase;
   }
+  ul a {
+    transition: 0.2s;
+  }
+  ul a:hover {
+    color: white;
+    background: #a7abae;
+  }
 }
 
 /*# sourceMappingURL=/style.a6dae8f7.css.map */
