@@ -160,23 +160,25 @@ ul li:last-child a {
     width: auto;
   }
   ul li a {
-    background: #fe7867;
     border-radius: 50px;
     color: white;
     display: inline;
     padding: 1rem;
     text-decoration: none;
     width: auto;
+    transition: 0.2s;
+  }
+  ul li a:hover {
+    color: white;
+    background: #a7abae;
   }
   ul li:last-child a {
     background: white;
     color: #23303e;
     text-transform: uppercase;
-  }
-  ul a {
     transition: 0.2s;
   }
-  ul a:hover {
+  ul li:last-child a:hover {
     color: white;
     background: #a7abae;
   }

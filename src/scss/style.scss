@@ -21,6 +21,14 @@
     transform: translate(-50%, -50%);
 }
 
+@mixin hoverA {
+    transition: 0.2s;
+    &:hover {
+        color: v.$primaryWhite;
+        background: v.$neutralGrayishblue;
+    }
+}
+
 // class to toggle burger menu
 .active {
     display: block;
@@ -182,13 +190,13 @@ ul {
             width: auto;
 
             a {
-                background: v.$primarySoftRed;
                 border-radius: v.$borderRadius;
                 color: v.$primaryWhite;
                 display: inline;
                 padding: 1rem;
                 text-decoration: none;
                 width: auto;
+                @include hoverA;
             }
         }
 
@@ -197,14 +205,7 @@ ul {
                 background: v.$primaryWhite;
                 color: v.$neutralDarkDesaturatedblue;
                 text-transform: uppercase;
-            }
-        }
-
-        a {
-            transition: 0.2s;
-            &:hover {
-                color: v.$primaryWhite;
-                background: v.$neutralGrayishblue;
+                @include hoverA;
             }
         }
     }
