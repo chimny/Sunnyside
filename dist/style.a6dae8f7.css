@@ -116,7 +116,7 @@ ul li:last-child a {
   header .cta {
     left: 50%;
     position: absolute;
-    top: 30%;
+    top: 40%;
     transform: translate(-50%, -50%);
   }
   header .cta h1 {
@@ -124,10 +124,6 @@ ul li:last-child a {
     width: 50vw;
   }
   header .cta img.arrow {
-    left: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
     height: 120px;
     margin-top: 120px;
   }
