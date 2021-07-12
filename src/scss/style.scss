@@ -10,7 +10,7 @@
 }
 
 .wrapper {
-    max-width: $mobile;
+    max-width: v.$mobile;
     margin: 0 auto;
 }
 
@@ -63,7 +63,7 @@ header {
 
     .navbar {
         width: 100%;
-        top: $positionValue;
+        top: v.$positionValue;
         position: relative;
         margin-right: 0;
         height: 80px;
