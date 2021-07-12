@@ -1,14 +1,14 @@
 * {
+  box-sizing: border-box;
+  font-family: "Barlow", sans-serif;
   font-size: 18px;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: "Barlow", sans-serif;
 }
 
 .wrapper {
-  max-width: 375px;
   margin: 0 auto;
+  max-width: 425px;
 }
 
 .active {
@@ -16,65 +16,65 @@
 }
 
 header {
-  width: 100vw;
-  position: relative;
-  height: 80vh;
-  background-size: cover;
-  background-position: center;
   background-image: url("/image-header.dab4d08b.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+  position: relative;
+  width: 100%;
 }
 header .cta {
-  transform: translate(-50%, -50%);
-  top: 50%;
-  position: absolute;
-  margin: 0 auto;
   left: 50%;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 header .cta h1 {
-  transform: translate(-50%, -50%);
-  top: 30%;
-  text-transform: uppercase;
-  text-align: center;
-  position: absolute;
-  letter-spacing: 0.5rem;
-  left: 50%;
-  font-size: 36px;
-  font-family: "Fraunces", serif;
   color: white;
+  font-family: "Fraunces", serif;
+  font-size: 36px;
+  left: 50%;
+  letter-spacing: 0.5rem;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  top: 30%;
+  transform: translate(-50%, -50%);
 }
 header .cta img.arrow {
-  margin-top: 7rem;
   height: 72px;
+  margin-top: 7rem;
 }
 header nav {
-  width: 100%;
-  top: 32px;
-  position: relative;
-  margin-right: 0;
   height: 80px;
+  margin-right: 0;
+  position: relative;
+  top: 32px;
+  width: 100%;
 }
 header nav .burger {
-  z-index: 10;
-  right: 32px;
   position: absolute;
+  right: 32px;
+  z-index: 10;
 }
 header nav .logo {
-  position: absolute;
   left: 32px;
+  position: absolute;
 }
 
 ul {
-  z-index: 2;
-  width: 80vw;
-  transform: translate(-50%, -50%);
-  top: 12rem;
-  position: absolute;
-  margin: 0 auto;
-  left: 50%;
-  height: 14rem;
-  font-family: "Fraunces", serif;
-  display: none;
   background-color: white;
+  display: none;
+  font-family: "Fraunces", serif;
+  height: 14rem;
+  left: 50%;
+  margin: 0 auto;
+  position: absolute;
+  top: 12rem;
+  transform: translate(-50%, -50%);
+  width: 80vw;
+  z-index: 2;
 }
 ul .container {
   padding: 1rem 0;
@@ -83,53 +83,52 @@ ul img {
   display: none;
 }
 ul li {
-  width: 50%;
-  text-align: center;
-  margin: 0 auto;
   list-style: none;
+  margin: 0 auto;
+  text-align: center;
+  width: 50%;
 }
 ul li a {
-  width: 100%;
-  text-decoration: none;
-  padding: 1rem;
-  display: block;
   color: #818498;
+  display: block;
+  padding: 1rem;
+  text-decoration: none;
+  width: 100%;
 }
 ul li:last-child a {
-  text-transform: uppercase;
-  color: #23303e;
-  border-radius: 50px;
   background: #fad400;
+  border-radius: 50px;
+  color: #23303e;
+  text-transform: uppercase;
 }
 
-@media (min-width: 376px) {
+@media (min-width: 426px) {
   .wrapper {
     max-width: 1440px;
   }
 
   header {
-    min-height: 85vh;
-    max-width: 1440px;
-    background-position: 0% 50%;
     background-image: url("/image-header.ffd6b8fd.jpg");
+    max-width: 1440px;
+    min-height: 85vh;
   }
   header .cta {
-    transform: translate(-50%, -50%);
-    top: 30%;
-    position: absolute;
     left: 50%;
+    position: absolute;
+    top: 30%;
+    transform: translate(-50%, -50%);
   }
   header .cta h1 {
-    width: 50vw;
     display: block;
+    width: 50vw;
   }
   header .cta img.arrow {
-    margin-top: 120px;
-    height: 120px;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    position: absolute;
     left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 120px;
+    margin-top: 120px;
   }
 
   img.burger {
@@ -137,18 +136,19 @@ ul li:last-child a {
   }
 
   ul {
-    z-index: 2;
-    width: auto;
-    transform: translate(0);
-    top: 0;
-    text-align: right;
-    right: 0;
-    position: absolute;
-    padding-right: 64px;
-    margin: 0 auto;
-    height: 14rem;
-    display: block;
     background-color: transparent;
+    display: block;
+    height: 14rem;
+    margin: 0 auto;
+    padding-right: 64px;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    top: 0;
+    transform: translate(0);
+    transform-origin: center;
+    width: auto;
+    z-index: 2;
   }
   ul .container {
     padding: 1rem 0;
@@ -157,24 +157,25 @@ ul li:last-child a {
     display: none;
   }
   ul li {
-    width: auto;
-    text-align: center;
-    margin: 0 1rem 0 auto;
-    list-style: none;
     display: inline;
+    list-style: none;
+    margin: 0 1rem 0 auto;
+    text-align: center;
+    width: auto;
   }
   ul li a {
-    width: auto;
-    text-decoration: none;
-    padding: 1rem;
-    display: inline;
+    background: #fe7867;
+    border-radius: 50px;
     color: white;
+    display: inline;
+    padding: 1rem;
+    text-decoration: none;
+    width: auto;
   }
   ul li:last-child a {
-    text-transform: uppercase;
-    color: #23303e;
-    border-radius: 50px;
     background: white;
+    color: #23303e;
+    text-transform: uppercase;
   }
 }
 

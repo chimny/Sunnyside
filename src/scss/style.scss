@@ -1,24 +1,24 @@
 @use './variables.scss'as v;
 
 * {
+    box-sizing: border-box;
+    font-family: "Barlow", sans-serif;
     font-size: 18px;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: "Barlow", sans-serif;
 }
 
 .wrapper {
-    max-width: v.$mobile;
     margin: 0 auto;
+    max-width: v.$mobile;
 }
 
 // mixins
 @mixin absolutePositioner($topValue) {
-    transform: translate(-50%, -50%);
-    top: $topValue;
-    position: absolute;
     left: 50%;
+    position: absolute;
+    top: $topValue;
+    transform: translate(-50%, -50%);
 }
 
 // class to toggle burger menu
@@ -27,71 +27,71 @@
 }
 
 header {
-    width: 100vw;
-    position: relative;
-    height: 80vh;
-    background-size: cover;
-    background-position: center;
     background-image: url("/images/mobile/image-header.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    position: relative;
+    width: 100%;
 
     .cta {
-        transform: translate(-50%, -50%);
-        top: 50%;
-        position: absolute;
-        margin: 0 auto;
         left: 50%;
+        margin: 0 auto;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
 
         h1 {
-            transform: translate(-50%, -50%);
-            top: 30%;
-            text-transform: uppercase;
-            text-align: center;
-            position: absolute;
-            letter-spacing: 0.5rem;
-            left: 50%;
-            font-size: 36px;
-            font-family: "Fraunces", serif;
             color: v.$primaryWhite;
+            font-family: "Fraunces", serif;
+            font-size: 36px;
+            left: 50%;
+            letter-spacing: 0.5rem;
+            position: absolute;
+            text-align: center;
+            text-transform: uppercase;
+            top: 30%;
+            transform: translate(-50%, -50%);
         }
 
         img.arrow {
-            margin-top: 7rem;
             height: 72px;
+            margin-top: 7rem;
         }
     }
 
     nav {
-        width: 100%;
-        top: v.$positionValue;
-        position: relative;
-        margin-right: 0;
         height: 80px;
+        margin-right: 0;
+        position: relative;
+        top: v.$positionValue;
+        width: 100%;
 
         .burger {
-            z-index: 10;
-            right: v.$positionValue;
             position: absolute;
+            right: v.$positionValue;
+            z-index: 10;
         }
 
         .logo {
-            position: absolute;
             left: v.$positionValue;
+            position: absolute;
         }
     }
 }
 
 ul {
-    z-index: 2;
-    width: 80vw;
-    transform: translate(-50%, -50%);
-    top: 12rem;
-    position: absolute;
-    margin: 0 auto;
-    left: 50%;
-    height: 14rem;
-    font-family: "Fraunces", serif;
-    display: none;
     background-color: v.$primaryWhite;
+    display: none;
+    font-family: "Fraunces", serif;
+    height: 14rem;
+    left: 50%;
+    margin: 0 auto;
+    position: absolute;
+    top: 12rem;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    z-index: 2;
 
     .container {
         padding: 1rem 0;
@@ -102,53 +102,52 @@ ul {
     }
 
     li {
-        width: 50%;
-        text-align: center;
-        margin: 0 auto;
         list-style: none;
+        margin: 0 auto;
+        text-align: center;
+        width: 50%;
 
         a {
-            width: 100%;
-            text-decoration: none;
-            padding: 1rem;
-            display: block;
             color: v.$neutralDarkGrayishblue;
+            display: block;
+            padding: 1rem;
+            text-decoration: none;
+            width: 100%;
         }
     }
 
     li:last-child {
         a {
-            text-transform: uppercase;
-            color: v.$neutralDarkDesaturatedblue;
-            border-radius: 50px;
             background: v.$primaryYellow;
+            border-radius: 50px;
+            color: v.$neutralDarkDesaturatedblue;
+            text-transform: uppercase;
         }
     }
 }
 
-@media (min-width: v.$mobilebreakpoint) {
+@media (min-width: 426px) {
     .wrapper {
         max-width: v.$desktop;
     }
 
     header {
-        min-height: 85vh;
-        max-width: v.$desktop;
-        background-position: 0% 50%;
         background-image: url("/images/desktop/image-header.jpg");
+        max-width: v.$desktop;
+        min-height: 85vh;
 
         .cta {
             @include absolutePositioner(30%);
 
             h1 {
-                width: 50vw;
                 display: block;
+                width: 50vw;
             }
 
             img.arrow {
-                margin-top: 120px;
-                height: 120px;
                 @include absolutePositioner(50%);
+                height: 120px;
+                margin-top: 120px;
             }
         }
     }
@@ -158,18 +157,18 @@ ul {
     }
 
     ul {
-        z-index: 2;
-        width: auto;
-        transform: translate(0);
-        top: 0;
-        text-align: right;
-        right: 0;
-        position: absolute;
-        padding-right: 64px;
-        margin: 0 auto;
-        height: 14rem;
-        display: block;
         background-color: transparent;
+        width: auto;
+        display: block;
+        height: 14rem;
+        margin: 0 auto;
+        padding-right: 64px;
+        position: absolute;
+        right: 0;
+        text-align: right;
+        top: 0;
+        width: auto;
+        z-index: 2;
 
         .container {
             padding: 1rem 0;
@@ -180,27 +179,28 @@ ul {
         }
 
         li {
-            width: auto;
-            text-align: center;
-            margin: 0 1rem 0 auto;
-            list-style: none;
             display: inline;
+            list-style: none;
+            margin: 0 1rem 0 auto;
+            text-align: center;
+            width: auto;
 
             a {
-                width: auto;
-                text-decoration: none;
-                padding: 1rem;
-                display: inline;
+                background: v.$primarySoftRed;
+                border-radius: 50px;
                 color: v.$primaryWhite;
+                display: inline;
+                padding: 1rem;
+                text-decoration: none;
+                width: auto;
             }
         }
 
         li:last-child {
             a {
-                text-transform: uppercase;
-                color: v.$neutralDarkDesaturatedblue;
-                border-radius: 50px;
                 background: v.$primaryWhite;
+                color: v.$neutralDarkDesaturatedblue;
+                text-transform: uppercase;
             }
         }
     }
