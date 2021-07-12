@@ -1,0 +1,195 @@
+@use './variables.scss'as v;
+
+// mixins
+@mixin absolutePositioner($topValue) {
+    left: 50%;
+    position: absolute;
+    top: $topValue;
+    transform: translate(-50%, -50%);
+}
+
+@mixin hoverA {
+    transition: 0.2s;
+    &:hover {
+        color: v.$primaryWhite;
+        background: v.$neutralGrayishblue;
+    }
+}
+
+// class to toggle burger menu
+.active {
+    display: block;
+}
+
+header {
+    background-image: url("/images/mobile/image-header.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    position: relative;
+    width: 100%;
+
+    .cta {
+        left: 50%;
+        margin: 0 auto;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+        h1 {
+            color: v.$primaryWhite;
+            font-family: "Fraunces", serif;
+            font-size: 36px;
+            left: 50%;
+            letter-spacing: 0.5rem;
+            position: absolute;
+            text-align: center;
+            text-transform: uppercase;
+            top: 30%;
+            transform: translate(-50%, -50%);
+        }
+
+        img.arrow {
+            height: 72px;
+            margin-top: 7rem;
+        }
+    }
+
+    nav {
+        height: 80px;
+        margin-right: 0;
+        position: relative;
+        top: v.$positionValue;
+        width: 100%;
+
+        .burger {
+            position: absolute;
+            right: v.$positionValue;
+            z-index: 10;
+        }
+
+        .logo {
+            left: v.$positionValue;
+            position: absolute;
+        }
+    }
+}
+
+ul {
+    background-color: v.$primaryWhite;
+    display: none;
+    font-family: "Fraunces", serif;
+    height: 14rem;
+    left: 50%;
+    margin: 0 auto;
+    position: absolute;
+    top: 12rem;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    z-index: 2;
+
+    img {
+        display: none;
+    }
+
+    li {
+        list-style: none;
+        margin: 0 auto;
+        text-align: center;
+        width: 50%;
+
+        a {
+            color: v.$neutralDarkGrayishblue;
+            display: block;
+            padding: 1rem;
+            text-decoration: none;
+            width: 100%;
+        }
+    }
+
+    li:last-child {
+        a {
+            background: v.$primaryYellow;
+            border-radius: v.$borderRadius;
+            color: v.$neutralDarkDesaturatedblue;
+            text-transform: uppercase;
+        }
+    }
+}
+
+@media (min-width: v.$mobile+1px) {
+    header {
+        background-image: url("/images/desktop/image-header.jpg");
+        max-width: v.$desktop;
+        min-height: 85vh;
+
+        .cta {
+            @include absolutePositioner(30%);
+
+            h1 {
+                display: block;
+                width: 50vw;
+            }
+
+            img.arrow {
+                @include absolutePositioner(50%);
+                height: 120px;
+                margin-top: 120px;
+            }
+        }
+    }
+
+    img.burger {
+        display: none;
+    }
+
+    ul {
+        background-color: transparent;
+        display: block;
+        height: 14rem;
+        margin: 0 auto;
+        padding-right: 64px;
+        position: absolute;
+        right: 0;
+        text-align: right;
+        top: 0;
+        transform: translateX(-50%);
+        width: 100%;
+        z-index: 2;
+
+        .container {
+            padding: 1rem 0;
+        }
+
+        img {
+            display: none;
+        }
+
+        li {
+            display: inline;
+            list-style: none;
+            margin: 0 1rem 0 auto;
+            text-align: center;
+            width: auto;
+
+            a {
+                border-radius: v.$borderRadius;
+                color: v.$primaryWhite;
+                display: inline;
+                padding: 1rem;
+                text-decoration: none;
+                width: auto;
+                @include hoverA;
+            }
+        }
+
+        li:last-child {
+            a {
+                background: v.$primaryWhite;
+                color: v.$neutralDarkDesaturatedblue;
+                text-transform: uppercase;
+                @include hoverA;
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+@use './variables.scss'as v;
+
+* {
+    box-sizing: border-box;
+    font-family: "Barlow", sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: v.$mobile;
+}
+
+@media (min-width: v.$mobile+1px) {
+    .wrapper {
+        max-width: v.$desktop;
+    }
+}

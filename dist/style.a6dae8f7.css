@@ -11,6 +11,11 @@
   max-width: 768px;
 }
 
+@media (min-width: 769px) {
+  .wrapper {
+    max-width: 1440px;
+  }
+}
 .active {
   display: block;
 }
@@ -100,10 +105,6 @@ ul li:last-child a {
 }
 
 @media (min-width: 769px) {
-  .wrapper {
-    max-width: 1440px;
-  }
-
   header {
     background-image: url("/image-header.ffd6b8fd.jpg");
     max-width: 1440px;
