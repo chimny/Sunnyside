@@ -11,6 +11,10 @@
   max-width: 768px;
 }
 
+a {
+  text-decoration: none;
+}
+
 @media (min-width: 769px) {
   .wrapper {
     max-width: 1440px;
@@ -94,7 +98,6 @@ ul li a {
   color: #818498;
   display: block;
   padding: 1rem;
-  text-decoration: none;
   width: 100%;
 }
 ul li:last-child a {
@@ -171,7 +174,7 @@ ul li:last-child a {
   }
   ul li a:hover {
     color: white;
-    background: #a7abae;
+    background: #818498;
   }
   ul li:last-child a {
     background: white;
@@ -181,8 +184,33 @@ ul li:last-child a {
   }
   ul li:last-child a:hover {
     color: white;
-    background: #a7abae;
+    background: #818498;
   }
+}
+img {
+  max-width: 100%;
+}
+
+.about {
+  text-align: center;
+}
+
+.contentBox {
+  padding: 2rem 0;
+}
+.contentBox h2 {
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+  padding: 1rem;
+}
+.contentBox p {
+  padding: 1rem 1rem;
+  color: #5a636c;
+}
+.contentBox a {
+  color: #23303e;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=/style.a6dae8f7.css.map */

@@ -13,6 +13,10 @@
     max-width: v.$mobile;
 }
 
+a {
+    text-decoration: none;
+}
+
 @media (min-width: v.$mobile+1px) {
     .wrapper {
         max-width: v.$desktop;

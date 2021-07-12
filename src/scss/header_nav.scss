@@ -12,7 +12,7 @@
     transition: 0.2s;
     &:hover {
         color: v.$primaryWhite;
-        background: v.$neutralGrayishblue;
+        background: v.$neutralDarkGrayishblue;
     }
 }
 
@@ -102,7 +102,6 @@ ul {
             color: v.$neutralDarkGrayishblue;
             display: block;
             padding: 1rem;
-            text-decoration: none;
             width: 100%;
         }
     }

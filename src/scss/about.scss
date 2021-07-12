@@ -1,0 +1,30 @@
+@use './variables.scss'as v;
+
+img {
+    max-width: 100%;
+}
+
+.about {
+    text-align: center;
+}
+
+.contentBox {
+    padding: 2rem 0;
+
+    h2 {
+        font-family: "Fraunces", serif;
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
+    p {
+        padding: 1rem 1rem;
+        color: v.$neutralVeryDarkGrayishblue;
+    }
+
+    a {
+        color: v.$neutralDarkDesaturatedblue;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}
