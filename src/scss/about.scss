@@ -1,7 +1,12 @@
 @use './variables.scss'as v;
 
+.keypoints > * {
+    min-height: 60vh;
+}
+
 img {
     max-width: 100%;
+    margin: 0 auto;
 }
 
 .about {
@@ -39,14 +44,66 @@ img {
 }
 
 .additionalPoints {
-    height: 70vh;
-    background-position: center;
+    min-height: 25rem;
+    position: relative;
     background-size: cover;
+
+    div {
+        position: absolute;
+        bottom: 1rem;
+        left: 1rem;
+        right: 1rem;
+
+        h3 {
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+    }
 }
 
 .cherry {
     background-image: url("../images/mobile/image-graphic-design.jpg");
+    color: v.$primaryDarkDesaturated;
 }
 .orange {
     background-image: url("../images/mobile/image-photography.jpg");
+    color: v.$primaryDarkblue;
+}
+
+@media (min-width: v.$mobile+1px) {
+    .keypoints .reversed {
+        img {
+            grid-area: transformIMG;
+        }
+        .contentBox {
+            grid-area: transform;
+        }
+    }
+
+    .keypoints {
+        img {
+            grid-area: standoutIMG;
+        }
+        .contentBox {
+            grid-area: standout;
+        }
+    }
+
+    .cherry {
+        grid-area: graphicDesign;
+    }
+
+    .orange {
+        grid-area: photography;
+    }
+
+    .about {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "transform transformIMG"
+            " standoutIMG standout"
+            "graphicDesign photography";
+    }
 }
