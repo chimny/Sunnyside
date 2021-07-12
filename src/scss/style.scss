@@ -115,14 +115,14 @@ ul {
     li:last-child {
         a {
             background: v.$primaryYellow;
-            border-radius: 50px;
+            border-radius: v.$borderRadius;
             color: v.$neutralDarkDesaturatedblue;
             text-transform: uppercase;
         }
     }
 }
 
-@media (min-width: 426px) {
+@media (min-width: 769px) {
     .wrapper {
         max-width: v.$desktop;
     }
@@ -162,8 +162,8 @@ ul {
         right: 0;
         text-align: right;
         top: 0;
-        transform: translateX(-30%);
-        width: 70%;
+        transform: translateX(-50%);
+        width: 100%;
         z-index: 2;
 
         .container {
@@ -183,7 +183,7 @@ ul {
 
             a {
                 background: v.$primarySoftRed;
-                border-radius: 50px;
+                border-radius: v.$borderRadius;
                 color: v.$primaryWhite;
                 display: inline;
                 padding: 1rem;
