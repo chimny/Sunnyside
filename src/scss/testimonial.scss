@@ -5,10 +5,10 @@
     text-align: center;
 
     h4 {
-        text-transform: uppercase;
-        letter-spacing: 4px;
-        font-family: "Fraunces", serif;
         color: v.$neutralDarkGrayishblue;
+        font-family: "Fraunces", serif;
+        letter-spacing: 4px;
+        text-transform: uppercase;
     }
 
     .quote {
@@ -31,21 +31,21 @@
 
 @media (min-width: v.$mobile+1px) {
     .testimonialcontainer {
+        column-gap: 2rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 4rem minmax(120px, auto);
         padding: 3rem 4rem;
         text-align: center;
-        display: grid;
-        grid-template-rows: 4rem minmax(120px, auto);
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 2rem;
 
         h4 {
-            text-transform: uppercase;
-            font-family: "Fraunces", serif;
-            color: v.$neutralDarkGrayishblue;
-            letter-spacing: 8px;
-            grid-column: 1 / 4;
             align-self: center;
+            color: v.$neutralDarkGrayishblue;
+            font-family: "Fraunces", serif;
             font-size: 1.5rem;
+            grid-column: 1 / 4;
+            letter-spacing: 8px;
+            text-transform: uppercase;
         }
 
         .quote {

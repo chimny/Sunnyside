@@ -12,6 +12,7 @@
     .milk {
         background: url("../images/mobile/image-gallery-milkbottles.jpg");
         background-size: cover;
+        background-position: bottom;
         grid-area: milk;
     }
 
@@ -19,18 +20,22 @@
         grid-area: orangePlate;
         background: url("../images/mobile/image-gallery-orange.jpg");
         background-size: cover;
+        background-position: bottom;
     }
 
     .iceCream {
         grid-area: iceCream;
         background: url("../images/mobile/image-gallery-cone.jpg");
         background-size: cover;
+        background-size: 100% auto;
     }
 
     .sugarCubes {
         grid-area: sugarCubes;
         background: url("../images/mobile/image-gallery-sugar-cubes.jpg");
         background-size: cover;
+        background-size: 100% auto;
+        background-position: bottom;
     }
 }
 
@@ -42,6 +47,7 @@
     }
 
     .milk {
+        background-position: top;
         background: url("../images/desktop/image-gallery-milkbottles.jpg");
     }
 

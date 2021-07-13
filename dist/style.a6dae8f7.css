@@ -325,10 +325,10 @@ ul li:last-child a {
   text-align: center;
 }
 .testimonialcontainer h4 {
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  font-family: "Fraunces", serif;
   color: #818498;
+  font-family: "Fraunces", serif;
+  letter-spacing: 4px;
+  text-transform: uppercase;
 }
 .testimonialcontainer .quote {
   color: #5a636c;
@@ -347,21 +347,21 @@ ul li:last-child a {
 
 @media (min-width: 769px) {
   .testimonialcontainer {
+    column-gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 4rem minmax(120px, auto);
     padding: 3rem 4rem;
     text-align: center;
-    display: grid;
-    grid-template-rows: 4rem minmax(120px, auto);
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 2rem;
   }
   .testimonialcontainer h4 {
-    text-transform: uppercase;
-    font-family: "Fraunces", serif;
-    color: #818498;
-    letter-spacing: 8px;
-    grid-column: 1/4;
     align-self: center;
+    color: #818498;
+    font-family: "Fraunces", serif;
     font-size: 1.5rem;
+    grid-column: 1/4;
+    letter-spacing: 8px;
+    text-transform: uppercase;
   }
   .testimonialcontainer .quote {
     color: #5a636c;
@@ -387,22 +387,27 @@ ul li:last-child a {
 .images .milk {
   background: url("/image-gallery-milkbottles.96649a76.jpg");
   background-size: cover;
+  background-position: bottom;
   grid-area: milk;
 }
 .images .orangePlate {
   grid-area: orangePlate;
   background: url("/image-gallery-orange.d7ca1151.jpg");
   background-size: cover;
+  background-position: bottom;
 }
 .images .iceCream {
   grid-area: iceCream;
   background: url("/image-gallery-cone.4fe83844.jpg");
   background-size: cover;
+  background-size: 100% auto;
 }
 .images .sugarCubes {
   grid-area: sugarCubes;
   background: url("/image-gallery-sugar-cubes.58bb78fc.jpg");
   background-size: cover;
+  background-size: 100% auto;
+  background-position: bottom;
 }
 
 @media (min-width: 769px) {
@@ -413,6 +418,7 @@ ul li:last-child a {
   }
 
   .milk {
+    background-position: top;
     background: url("/image-gallery-milkbottles.0d56e328.jpg");
   }
 
