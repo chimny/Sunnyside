@@ -1,0 +1,17 @@
+@use './variables.scss'as v;
+
+.testimonialcontainer {
+    padding: 1.5rem 2rem;
+    text-align: center;
+
+    h4 {
+        text-transform: uppercase;
+        font-family: "Fraunces", serif;
+        color: v.$neutralDarkGrayishblue;
+        letter-spacing: 4px;
+    }
+    img {
+        border-radius: 50%;
+        margin: 2rem auto;
+    }
+}

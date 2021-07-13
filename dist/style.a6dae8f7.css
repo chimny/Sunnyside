@@ -289,21 +289,14 @@ ul li:last-child a {
   }
 
   .contentBox {
-    flex-grow: 1;
-    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
   }
 
   .keypoints {
     display: flex;
-    flex-basis: 0;
-    flex: 1 1 0px;
-  }
-
-  .keypoints > * {
-    min-height: none;
   }
 
   .reversed {
@@ -311,9 +304,7 @@ ul li:last-child a {
   }
 
   .transformImage {
-    flex-grow: 1;
     background-image: url("/image-transform.1d7ab604.jpg");
-    background-size: cover;
   }
 
   .standout {
@@ -327,6 +318,20 @@ ul li:last-child a {
   .orange {
     background-image: url("/image-photography.8b07aa52.jpg");
   }
+}
+.testimonialcontainer {
+  padding: 1.5rem 2rem;
+  text-align: center;
+}
+.testimonialcontainer h4 {
+  text-transform: uppercase;
+  font-family: "Fraunces", serif;
+  color: #818498;
+  letter-spacing: 4px;
+}
+.testimonialcontainer img {
+  border-radius: 50%;
+  margin: 2rem auto;
 }
 
 /*# sourceMappingURL=/style.a6dae8f7.css.map */

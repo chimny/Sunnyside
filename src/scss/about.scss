@@ -113,21 +113,14 @@
     }
 
     .contentBox {
-        flex-grow: 1;
-        align-items: center;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        width: 100%;
     }
 
     .keypoints {
         display: flex;
-        flex-basis: 0;
-        flex: 1 1 0px;
-    }
-
-    .keypoints > * {
-        min-height: none;
     }
 
     .reversed {
@@ -135,9 +128,7 @@
     }
 
     .transformImage {
-        flex-grow: 1;
         background-image: url("../images/desktop/image-transform.jpg");
-        background-size: cover;
     }
 
     .standout {
