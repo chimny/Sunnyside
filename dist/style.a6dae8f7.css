@@ -275,8 +275,7 @@ img {
     flex-direction: column;
   }
 
-  img,
-.additionalPoints {
+  .additionalPoints {
     width: 50%;
   }
 
@@ -291,6 +290,9 @@ img {
     display: flex;
     flex-basis: 0;
     flex: 1 1 0px;
+  }
+  .keypoints img {
+    width: 50%;
   }
 
   .reversed {
