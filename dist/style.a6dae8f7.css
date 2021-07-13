@@ -184,7 +184,7 @@ ul li:last-child a {
   }
 }
 .keypoints > * {
-  min-height: 60vh;
+  min-height: 50vh;
 }
 
 img {
@@ -238,11 +238,9 @@ img {
   background: #fe7867;
   z-index: -1;
   border-radius: 50px;
-  opacity: 0.8;
 }
 .contentBox .button .yellow::before {
   background: #fad400;
-  opacity: 0.8;
 }
 
 .additionalPoints {
@@ -272,33 +270,39 @@ img {
 }
 
 @media (min-width: 769px) {
-  .keypoints .reversed img {
-    grid-area: transformIMG;
-  }
-  .keypoints .reversed .contentBox {
-    grid-area: transform;
+  .about {
+    display: flex;
+    flex-direction: column;
   }
 
-  .keypoints img {
-    grid-area: standoutIMG;
+  img,
+.additionalPoints {
+    width: 50%;
   }
-  .keypoints .contentBox {
-    grid-area: standout;
+
+  .contentBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .keypoints {
+    display: flex;
+    flex-basis: 0;
+    flex: 1 1 0px;
+  }
+
+  .reversed {
+    flex-direction: row-reverse;
   }
 
   .cherry {
-    grid-area: graphicDesign;
+    background-image: url("/image-graphic-design.e6dce727.jpg");
   }
 
   .orange {
-    grid-area: photography;
-  }
-
-  .about {
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "transform transformIMG" " standoutIMG standout" "graphicDesign photography";
+    background-image: url("/image-photography.8b07aa52.jpg");
   }
 }
 

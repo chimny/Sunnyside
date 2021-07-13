@@ -1,7 +1,7 @@
 @use './variables.scss'as v;
 
 .keypoints > * {
-    min-height: 60vh;
+    min-height: 50vh;
 }
 
 img {
@@ -56,13 +56,11 @@ img {
                 background: v.$primarySoftRed;
                 z-index: -1;
                 border-radius: v.$borderRadius;
-                opacity: 0.8;
             }
         }
         .yellow {
             &::before {
                 background: v.$primaryYellow;
-                opacity: 0.8;
             }
         }
     }
@@ -95,40 +93,39 @@ img {
     color: v.$primaryDarkblue;
 }
 
+// breakpoint
 @media (min-width: v.$mobile+1px) {
-    .keypoints .reversed {
-        img {
-            grid-area: transformIMG;
-        }
-        .contentBox {
-            grid-area: transform;
-        }
+    .about {
+        display: flex;
+        flex-direction: column;
+    }
+
+    img,
+    .additionalPoints {
+        width: 50%;
+    }
+
+    .contentBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .keypoints {
-        img {
-            grid-area: standoutIMG;
-        }
-        .contentBox {
-            grid-area: standout;
-        }
+        display: flex;
+        flex-basis: 0;
+        flex: 1 1 0px;
+    }
+
+    .reversed {
+        flex-direction: row-reverse;
     }
 
     .cherry {
-        grid-area: graphicDesign;
+        background-image: url("../images/desktop/image-graphic-design.jpg");
     }
-
     .orange {
-        grid-area: photography;
-    }
-
-    .about {
-        display: grid;
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas:
-            "transform transformIMG"
-            " standoutIMG standout"
-            "graphicDesign photography";
+        background-image: url("../images/desktop/image-photography.jpg");
     }
 }

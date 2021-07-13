@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"C:\\Web dev\\Projekty\\sunnyside-agency-landing-page-main\\src\\images\\mobile\\image-header.jpg":[["image-header.dab4d08b.jpg","images/mobile/image-header.jpg"],"images/mobile/image-header.jpg"],"C:\\Web dev\\Projekty\\sunnyside-agency-landing-page-main\\src\\images\\desktop\\image-header.jpg":[["image-header.ffd6b8fd.jpg","images/desktop/image-header.jpg"],"images/desktop/image-header.jpg"],"./..\\images\\mobile\\image-graphic-design.jpg":[["image-graphic-design.b97e81ff.jpg","images/mobile/image-graphic-design.jpg"],"images/mobile/image-graphic-design.jpg"],"./..\\images\\mobile\\image-photography.jpg":[["image-photography.6562ae8a.jpg","images/mobile/image-photography.jpg"],"images/mobile/image-photography.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"C:\\Web dev\\Projekty\\sunnyside-agency-landing-page-main\\src\\images\\mobile\\image-header.jpg":[["image-header.dab4d08b.jpg","images/mobile/image-header.jpg"],"images/mobile/image-header.jpg"],"C:\\Web dev\\Projekty\\sunnyside-agency-landing-page-main\\src\\images\\desktop\\image-header.jpg":[["image-header.ffd6b8fd.jpg","images/desktop/image-header.jpg"],"images/desktop/image-header.jpg"],"./..\\images\\mobile\\image-graphic-design.jpg":[["image-graphic-design.b97e81ff.jpg","images/mobile/image-graphic-design.jpg"],"images/mobile/image-graphic-design.jpg"],"./..\\images\\mobile\\image-photography.jpg":[["image-photography.6562ae8a.jpg","images/mobile/image-photography.jpg"],"images/mobile/image-photography.jpg"],"./..\\images\\desktop\\image-graphic-design.jpg":[["image-graphic-design.e6dce727.jpg","images/desktop/image-graphic-design.jpg"],"images/desktop/image-graphic-design.jpg"],"./..\\images\\desktop\\image-photography.jpg":[["image-photography.8b07aa52.jpg","images/desktop/image-photography.jpg"],"images/desktop/image-photography.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63744" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57872" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
