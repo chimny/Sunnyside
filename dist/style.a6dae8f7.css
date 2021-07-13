@@ -297,6 +297,7 @@ ul li:last-child a {
 
   .keypoints {
     display: flex;
+    height: 70vh;
   }
 
   .reversed {
