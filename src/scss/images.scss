@@ -1,0 +1,59 @@
+@use './variables.scss'as v;
+
+.images {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    min-height: 340px;
+    grid-template-areas:
+        "milk orangePlate"
+        "iceCream sugarCubes";
+
+    .milk {
+        background: url("../images/mobile/image-gallery-milkbottles.jpg");
+        background-size: cover;
+        grid-area: milk;
+    }
+
+    .orangePlate {
+        grid-area: orangePlate;
+        background: url("../images/mobile/image-gallery-orange.jpg");
+        background-size: cover;
+    }
+
+    .iceCream {
+        grid-area: iceCream;
+        background: url("../images/mobile/image-gallery-cone.jpg");
+        background-size: cover;
+    }
+
+    .sugarCubes {
+        grid-area: sugarCubes;
+        background: url("../images/mobile/image-gallery-sugar-cubes.jpg");
+        background-size: cover;
+    }
+}
+
+@media (min-width: v.$mobile+1px) {
+    .images {
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: "milk orangePlate iceCream sugarCubes";
+    }
+
+    .milk {
+        background: url("../images/desktop/image-gallery-milkbottles.jpg");
+    }
+
+    .orangePlate {
+        background: url("../images/desktop/image-gallery-orange.jpg");
+    }
+
+    .iceCream {
+        background: url("../images/desktop/image-gallery-cone.jpg");
+    }
+
+    .sugarCubes {
+        background: url("../images/mobile/image-gallery-sugar-cubes.jpg");
+    }
+}
