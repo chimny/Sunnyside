@@ -6,12 +6,62 @@
 
     h4 {
         text-transform: uppercase;
+        letter-spacing: 4px;
         font-family: "Fraunces", serif;
         color: v.$neutralDarkGrayishblue;
-        letter-spacing: 4px;
+    }
+
+    .quote {
+        color: v.$neutralVeryDarkGrayishblue;
+    }
+
+    .author {
+        margin: 1rem auto 0.5rem auto;
+        font-size: 1.2rem;
+    }
+
+    .position {
+        color: v.$neutralGrayishblue;
     }
     img {
         border-radius: 50%;
         margin: 2rem auto;
+    }
+}
+
+@media (min-width: v.$mobile+1px) {
+    .testimonialcontainer {
+        padding: 3rem 4rem;
+        text-align: center;
+        display: grid;
+        grid-template-rows: 4rem minmax(120px, auto);
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
+
+        h4 {
+            text-transform: uppercase;
+            font-family: "Fraunces", serif;
+            color: v.$neutralDarkGrayishblue;
+            letter-spacing: 8px;
+            grid-column: 1 / 4;
+            align-self: center;
+            font-size: 1.5rem;
+        }
+
+        .quote {
+            color: v.$neutralVeryDarkGrayishblue;
+            margin: 2rem auto;
+        }
+
+        .author {
+            margin: 1rem auto 0.5rem auto;
+        }
+
+        .position {
+            color: v.$neutralGrayishblue;
+        }
+        img {
+            height: 5rem;
+        }
     }
 }

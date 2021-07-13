@@ -325,13 +325,56 @@ ul li:last-child a {
 }
 .testimonialcontainer h4 {
   text-transform: uppercase;
+  letter-spacing: 4px;
   font-family: "Fraunces", serif;
   color: #818498;
-  letter-spacing: 4px;
+}
+.testimonialcontainer .quote {
+  color: #5a636c;
+}
+.testimonialcontainer .author {
+  margin: 1rem auto 0.5rem auto;
+  font-size: 1.2rem;
+}
+.testimonialcontainer .position {
+  color: #a7abae;
 }
 .testimonialcontainer img {
   border-radius: 50%;
   margin: 2rem auto;
+}
+
+@media (min-width: 769px) {
+  .testimonialcontainer {
+    padding: 3rem 4rem;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 4rem minmax(120px, auto);
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+  }
+  .testimonialcontainer h4 {
+    text-transform: uppercase;
+    font-family: "Fraunces", serif;
+    color: #818498;
+    letter-spacing: 8px;
+    grid-column: 1/4;
+    align-self: center;
+    font-size: 1.5rem;
+  }
+  .testimonialcontainer .quote {
+    color: #5a636c;
+    margin: 2rem auto;
+  }
+  .testimonialcontainer .author {
+    margin: 1rem auto 0.5rem auto;
+  }
+  .testimonialcontainer .position {
+    color: #a7abae;
+  }
+  .testimonialcontainer img {
+    height: 5rem;
+  }
 }
 
 /*# sourceMappingURL=/style.a6dae8f7.css.map */
