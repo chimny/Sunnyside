@@ -1,19 +1,22 @@
 @use './variables.scss'as v;
 
-.images {
+@mixin gridTemplate($gridRow, $gridColumn, $templateArea) {
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(2, 1fr);
-    min-height: 340px;
-    grid-template-areas:
-        "milk orangePlate"
-        "iceCream sugarCubes";
+    grid-template-rows: $gridRow;
+    grid-template-columns: $gridColumn;
+    grid-template-areas: $templateArea;
+}
 
-    @mixin imgBackground($gridArea, $url) {
-        grid-area: $gridArea;
-        background: url($url);
-        background-size: cover;
-    }
+@mixin imgBackground($gridArea, $url) {
+    grid-area: $gridArea;
+    background: url($url);
+    background-size: cover;
+    background-position: center;
+}
+
+.images {
+    @include gridTemplate(repeat(2, 1fr), repeat(2, 1fr), "milk orangePlate" "iceCream sugarCubes");
+    min-height: 460px;
 
     .milk {
         @include imgBackground(milk, "../images/mobile/image-gallery-milkbottles.jpg");

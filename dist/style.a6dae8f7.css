@@ -381,28 +381,32 @@ ul li:last-child a {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(2, 1fr);
-  min-height: 340px;
   grid-template-areas: "milk orangePlate" "iceCream sugarCubes";
+  min-height: 460px;
 }
 .images .milk {
   grid-area: milk;
   background: url("/image-gallery-milkbottles.96649a76.jpg");
   background-size: cover;
+  background-position: center;
 }
 .images .orangePlate {
   grid-area: orangePlate;
   background: url("/image-gallery-orange.d7ca1151.jpg");
   background-size: cover;
+  background-position: center;
 }
 .images .iceCream {
   grid-area: iceCream;
   background: url("/image-gallery-cone.4fe83844.jpg");
   background-size: cover;
+  background-position: center;
 }
 .images .sugarCubes {
   grid-area: sugarCubes;
   background: url("/image-gallery-sugar-cubes.58bb78fc.jpg");
   background-size: cover;
+  background-position: center;
 }
 
 @media (min-width: 769px) {
