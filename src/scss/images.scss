@@ -9,33 +9,26 @@
         "milk orangePlate"
         "iceCream sugarCubes";
 
-    .milk {
-        background: url("../images/mobile/image-gallery-milkbottles.jpg");
+    @mixin imgBackground($gridArea, $url) {
+        grid-area: $gridArea;
+        background: url($url);
         background-size: cover;
-        background-position: bottom;
-        grid-area: milk;
+    }
+
+    .milk {
+        @include imgBackground(milk, "../images/mobile/image-gallery-milkbottles.jpg");
     }
 
     .orangePlate {
-        grid-area: orangePlate;
-        background: url("../images/mobile/image-gallery-orange.jpg");
-        background-size: cover;
-        background-position: bottom;
+        @include imgBackground(orangePlate, "../images/mobile/image-gallery-orange.jpg");
     }
 
     .iceCream {
-        grid-area: iceCream;
-        background: url("../images/mobile/image-gallery-cone.jpg");
-        background-size: cover;
-        background-size: 100% auto;
+        @include imgBackground(iceCream, "../images/mobile/image-gallery-cone.jpg");
     }
 
     .sugarCubes {
-        grid-area: sugarCubes;
-        background: url("../images/mobile/image-gallery-sugar-cubes.jpg");
-        background-size: cover;
-        background-size: 100% auto;
-        background-position: bottom;
+        @include imgBackground(sugarCubes, "../images/mobile/image-gallery-sugar-cubes.jpg");
     }
 }
 
@@ -47,7 +40,6 @@
     }
 
     .milk {
-        background-position: top;
         background: url("../images/desktop/image-gallery-milkbottles.jpg");
     }
 

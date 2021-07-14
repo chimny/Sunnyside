@@ -385,29 +385,24 @@ ul li:last-child a {
   grid-template-areas: "milk orangePlate" "iceCream sugarCubes";
 }
 .images .milk {
+  grid-area: milk;
   background: url("/image-gallery-milkbottles.96649a76.jpg");
   background-size: cover;
-  background-position: bottom;
-  grid-area: milk;
 }
 .images .orangePlate {
   grid-area: orangePlate;
   background: url("/image-gallery-orange.d7ca1151.jpg");
   background-size: cover;
-  background-position: bottom;
 }
 .images .iceCream {
   grid-area: iceCream;
   background: url("/image-gallery-cone.4fe83844.jpg");
   background-size: cover;
-  background-size: 100% auto;
 }
 .images .sugarCubes {
   grid-area: sugarCubes;
   background: url("/image-gallery-sugar-cubes.58bb78fc.jpg");
   background-size: cover;
-  background-size: 100% auto;
-  background-position: bottom;
 }
 
 @media (min-width: 769px) {
@@ -418,7 +413,6 @@ ul li:last-child a {
   }
 
   .milk {
-    background-position: top;
     background: url("/image-gallery-milkbottles.0d56e328.jpg");
   }
 
