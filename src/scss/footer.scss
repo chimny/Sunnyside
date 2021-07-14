@@ -1,0 +1,11 @@
+@use './variables.scss' as v;
+
+footer {
+    height: 200px;
+    width: 100%;
+    background-color: v.$primaryDarkModerateCyan;
+
+    .footerNav {
+        padding: 20px 0;
+    }
+}

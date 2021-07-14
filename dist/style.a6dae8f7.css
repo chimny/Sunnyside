@@ -71,8 +71,7 @@ header nav .logo {
   left: 32px;
   position: absolute;
 }
-
-ul {
+header ul {
   background-color: white;
   display: none;
   font-family: "Fraunces", serif;
@@ -85,22 +84,22 @@ ul {
   width: 80vw;
   z-index: 2;
 }
-ul img {
+header ul img {
   display: none;
 }
-ul li {
+header ul li {
   list-style: none;
   margin: 0 auto;
   text-align: center;
   width: 50%;
 }
-ul li a {
+header ul li a {
   color: #818498;
   display: block;
   padding: 1rem;
   width: 100%;
 }
-ul li:last-child a {
+header ul li:last-child a {
   background: #fad400;
   border-radius: 50px;
   color: #23303e;
@@ -127,12 +126,7 @@ ul li:last-child a {
     height: 120px;
     margin-top: 120px;
   }
-
-  img.burger {
-    display: none;
-  }
-
-  ul {
+  header ul {
     background-color: transparent;
     display: block;
     height: 14rem;
@@ -146,20 +140,20 @@ ul li:last-child a {
     width: 100%;
     z-index: 2;
   }
-  ul .container {
+  header ul .container {
     padding: 1rem 0;
   }
-  ul img {
+  header ul img {
     display: none;
   }
-  ul li {
+  header ul li {
     display: inline;
     list-style: none;
     margin: 0 1rem 0 auto;
     text-align: center;
     width: auto;
   }
-  ul li a {
+  header ul li a {
     border-radius: 50px;
     color: white;
     display: inline;
@@ -168,19 +162,23 @@ ul li:last-child a {
     width: auto;
     transition: 0.2s;
   }
-  ul li a:hover {
+  header ul li a:hover {
     color: white;
     background: #818498;
   }
-  ul li:last-child a {
+  header ul li:last-child a {
     background: white;
     color: #23303e;
     text-transform: uppercase;
     transition: 0.2s;
   }
-  ul li:last-child a:hover {
+  header ul li:last-child a:hover {
     color: white;
     background: #818498;
+  }
+
+  img.burger {
+    display: none;
   }
 }
 .keypoints > * {
@@ -431,6 +429,14 @@ ul li:last-child a {
   .sugarCubes {
     background: url("/image-gallery-sugar-cubes.58bb78fc.jpg");
   }
+}
+footer {
+  height: 200px;
+  width: 100%;
+  background-color: #458c7e;
+}
+footer .footerNav {
+  padding: 20px 0;
 }
 
 /*# sourceMappingURL=/style.a6dae8f7.css.map */
