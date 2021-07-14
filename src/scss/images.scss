@@ -1,18 +1,5 @@
 @use './variables.scss'as v;
-
-@mixin gridTemplate($gridRow, $gridColumn, $templateArea) {
-    display: grid;
-    grid-template-rows: $gridRow;
-    grid-template-columns: $gridColumn;
-    grid-template-areas: $templateArea;
-}
-
-@mixin imgBackground($gridArea, $url) {
-    grid-area: $gridArea;
-    background: url($url);
-    background-size: cover;
-    background-position: center;
-}
+@use './mixins.scss' as *;
 
 .images {
     @include gridTemplate(repeat(2, 1fr), repeat(2, 1fr), "milk orangePlate" "iceCream sugarCubes");

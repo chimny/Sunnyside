@@ -1,20 +1,5 @@
 @use './variables.scss'as v;
-
-// mixins
-@mixin absolutePositioner($topValue) {
-    left: 50%;
-    position: absolute;
-    top: $topValue;
-    transform: translate(-50%, -50%);
-}
-
-@mixin hoverA {
-    transition: 0.2s;
-    &:hover {
-        color: v.$primaryWhite;
-        background: v.$neutralDarkGrayishblue;
-    }
-}
+@use './mixins.scss' as *;
 
 // class to toggle burger menu
 .active {
