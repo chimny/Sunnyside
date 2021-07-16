@@ -1,11 +1,32 @@
 @use './variables.scss' as v;
 
 footer {
+    background-color: v.$primaryDarkModerateCyan;
     height: 200px;
     width: 100%;
-    background-color: v.$primaryDarkModerateCyan;
 
     .footerNav {
+        margin: 0 auto;
         padding: 20px 0;
+        text-align: center;
+
+        ul {
+            margin-top: 24px;
+            li {
+                display: inline;
+                padding: 0 20px;
+                a {
+                    color: v.$primaryDarkDesaturated;
+                }
+            }
+        }
+    }
+
+    .socialBar {
+        margin-top: 16px;
+        text-align: center;
+        a {
+            padding: 0 8px;
+        }
     }
 }

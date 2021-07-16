@@ -431,12 +431,31 @@ header ul li:last-child a {
   }
 }
 footer {
+  background-color: #458c7e;
   height: 200px;
   width: 100%;
-  background-color: #458c7e;
 }
 footer .footerNav {
+  margin: 0 auto;
   padding: 20px 0;
+  text-align: center;
+}
+footer .footerNav ul {
+  margin-top: 24px;
+}
+footer .footerNav ul li {
+  display: inline;
+  padding: 0 20px;
+}
+footer .footerNav ul li a {
+  color: #25564b;
+}
+footer .socialBar {
+  margin-top: 16px;
+  text-align: center;
+}
+footer .socialBar a {
+  padding: 0 8px;
 }
 
 /*# sourceMappingURL=/style.a6dae8f7.css.map */
