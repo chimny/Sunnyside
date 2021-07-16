@@ -4,8 +4,11 @@
   "description": "![Design preview for the Sunnyside agency landing page coding challenge](./design/desktop-preview.jpg)",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html",
+    "start": "parcel ./src/index.html",
+    "prebuild-dev": "shx rm -rf dist/*",
+    "build-dev": "parcel build ./src/index.html --no-minify --public-url ./",
+    "prebuild": "shx rm -rf dist/*",
+    "build": "parcel build ./src/index.html --public-url ./",
     "push-gh-pages": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose"
   },
   "repository": {
@@ -20,7 +23,8 @@
   },
   "homepage": "https://github.com/chimny/Sunnyside#readme",
   "devDependencies": {
-    "sass": "^1.35.2"
+    "sass": "^1.35.2",
+    "shx": "^0.3.2"
   },
   "dependencies": {
     "parcel-bundler": "^1.12.5"
