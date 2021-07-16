@@ -15,8 +15,15 @@ footer {
             li {
                 display: inline;
                 padding: 0 20px;
+                transition: 0.2s;
                 a {
                     color: v.$primaryDarkDesaturated;
+                }
+
+                &:hover {
+                    a {
+                        color: v.$primaryWhite;
+                    }
                 }
             }
         }
