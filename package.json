@@ -5,14 +5,15 @@
   "main": "index.js",
   "scripts": {
     "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html"
+    "build": "parcel build src/index.html",
+    "push-gh-pages": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/chimny/Sunnyside.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Chimny",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/chimny/Sunnyside/issues"
