@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3b5fa97-67cb-4ef0-a624-153a77e129bd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.cache/27/61bdc683647952b6140dc2410a4088.json" beforeDir="false" afterPath="$PROJECT_DIR$/.cache/27/61bdc683647952b6140dc2410a4088.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main.fb6bbcaf.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.fb6bbcaf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main.fb6bbcaf.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.fb6bbcaf.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/style.a6dae8f7.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/style.a6dae8f7.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/testimonial.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/testimonial.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +23,27 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="b3b5fa97-67cb-4ef0-a624-153a77e129bd" name="Default Changelist" comment="" />
@@ -34,7 +52,11 @@
       <option name="presentableId" value="Default" />
       <updated>1626112030880</updated>
       <workItem from="1626112039801" duration="21000" />
+      <workItem from="1635510774779" duration="161000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>
