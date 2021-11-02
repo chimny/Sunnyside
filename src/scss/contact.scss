@@ -1,20 +1,29 @@
 @use 'variables'as v;
 
 
-#contact-section {
- padding: 2rem;
- display: flex;
+#contact {
+  padding: 2rem;
+  display: flex;
   min-height: 50vh;
-  background-color: red;
-  text-transform: uppercase;
+text-align: center;
+  color: v.$neutralGrayishblue;
+
+  h3{
+    font-size: 1.5rem;
+    color: v.$primaryDarkblue
+  }
+
+  .info-container {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    align-self: center;
 
 
+    .contact-details{
+      margin-bottom: 2rem;
+    }
 
 
- .form-container{
-  width: 100%;
-  margin: 0;
-  text-align: center;
-  align-self:center;
- }
+  }
 }
