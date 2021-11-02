@@ -4,13 +4,27 @@
 #contact {
   padding: 2rem;
   display: flex;
+  flex-direction: column;
   min-height: 50vh;
-text-align: center;
+  text-align: center;
   color: v.$neutralGrayishblue;
 
-  h3{
+  .map-container{
+    max-width: 100%;
+    iframe{
+      max-width: 100%;
+    }
+  }
+  h3 {
+    margin-top: 2rem;
     font-size: 1.5rem;
     color: v.$primaryDarkblue
+  }
+
+
+  a {
+    text-decoration: underline;
+    color: v.$primaryDarkDesaturated;
   }
 
   .info-container {
@@ -20,10 +34,21 @@ text-align: center;
     align-self: center;
 
 
-    .contact-details{
+    .contact-details {
       margin-bottom: 2rem;
     }
-
-
   }
+}
+
+@media (min-width: v.$mobile+1px) {
+#contact{
+  flex-direction: row;
+  .map-container{
+    iframe{
+      max-width: none;
+    }
+  }
+}
+
+
 }
