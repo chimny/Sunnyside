@@ -1,6 +1,7 @@
 @use './variables.scss'as v;
 
 * {
+    scroll-behavior: smooth;
     box-sizing: border-box;
     font-family: "Barlow", sans-serif;
     font-size: 18px;

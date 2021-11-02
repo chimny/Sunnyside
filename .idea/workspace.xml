@@ -2,8 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3b5fa97-67cb-4ef0-a624-153a77e129bd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/contact.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/about.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/about.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/general.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/general.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/header_nav.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/header_nav.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/images.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/images.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/testimonial.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/testimonial.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,11 +29,19 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Web dev\Projekty\sunnyside\sunnyside-agency-landing-page-main\src\scss" />
+      <recent name="C:\Web dev\Projekty\sunnyside\sunnyside-agency-landing-page-main\src\scss\sections" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -52,11 +69,22 @@
       <option name="presentableId" value="Default" />
       <updated>1626112030880</updated>
       <workItem from="1626112039801" duration="21000" />
-      <workItem from="1635510774779" duration="161000" />
+      <workItem from="1635510774779" duration="7199000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

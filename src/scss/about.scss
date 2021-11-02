@@ -1,4 +1,4 @@
-@use './variables.scss'as v;
+@use 'variables'as v;
 
 .keypoints > * {
     min-height: 50vh;
@@ -18,7 +18,7 @@
     background-image: url("../images/mobile/image-stand-out.jpg");
 }
 
-.about {
+#about {
     text-align: center;
 }
 
@@ -103,7 +103,7 @@
 
 // breakpoint
 @media (min-width: v.$mobile+1px) {
-    .about {
+    #about {
         display: flex;
         flex-direction: column;
     }

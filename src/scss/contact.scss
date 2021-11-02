@@ -1,0 +1,20 @@
+@use 'variables'as v;
+
+
+#contact-section {
+ padding: 2rem;
+ display: flex;
+  min-height: 50vh;
+  background-color: red;
+  text-transform: uppercase;
+
+
+
+
+ .form-container{
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  align-self:center;
+ }
+}

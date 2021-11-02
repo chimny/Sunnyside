@@ -1,5 +1,5 @@
-@use './variables.scss'as v;
-@use './mixins.scss' as *;
+@use 'variables'as v;
+@use 'mixins' as *;
 
 // class to toggle burger menu
 .active {
@@ -7,7 +7,7 @@
 }
 
 header {
-    background-image: url("/images/mobile/image-header.jpg");
+    background-image: url("../images/mobile/image-header.jpg");
     background-position: center;
     background-size: cover;
     height: 80vh;
@@ -103,7 +103,7 @@ header {
 
 @media (min-width: v.$mobile+1px) {
     header {
-        background-image: url("/images/desktop/image-header.jpg");
+        background-image: url("../images/desktop/image-header.jpg");
         max-width: v.$desktop;
         min-height: 85vh;
 

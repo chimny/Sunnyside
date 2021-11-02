@@ -1,6 +1,8 @@
 @forward './general.scss';
-@forward './header_nav.scss';
-@forward './about.scss';
-@forward './testimonial.scss';
-@forward './images.scss';
-@forward './footer.scss';
+@forward 'header_nav';
+@forward 'about';
+@forward 'testimonial';
+@forward './images';
+@forward "contact";
+@forward 'footer';
+
