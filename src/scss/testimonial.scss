@@ -1,90 +1,107 @@
 @use 'variables'as v;
 
 
-
 .testimonial-container {
-    margin-top: 1.5rem;
-    padding: 1.5rem 2rem;
-    text-align: center;
-    position: relative;
+  margin-top: 1.5rem;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  position: relative;
+  min-height: 600px;
 
-    .arrow{
-        //todo - work with arrows, to style them in the middle + setinterval functions
-        position: absolute;
-        top: 0;
-        right: 0;
-        transform: translateY(50%);
-        height: 80px;
-        cursor: pointer;
 
-    }
+  .arrow {
+    //todo - work with arrows, to style them in the middle + setinterval functions
+    position: absolute;
 
-    .testimonial{
-        display: none;
-    }
-    .active{
-        display: block;
-    }
+    height: 70px;
+    cursor: pointer;
+    margin: 0;
 
-    h4 {
-        color: v.$neutralDarkGrayishblue;
-        font-family: "Fraunces", serif;
-        letter-spacing: 4px;
-        text-transform: uppercase;
-    }
+  }
+  .right-arrow{
+    top: 50%;
+    right: 0;
+  }
 
-    .quote {
-        color: v.$neutralVeryDarkGrayishblue;
-    }
+  .left-arrow{
+    top: 50%;
+    left: 0;
+    transform: rotate(180deg) ;
+  }
 
-    .author {
-        margin: 1rem auto 0.5rem auto;
-        font-size: 1.2rem;
-    }
+  .testimonial {
+    display: none;
+    padding: 0 2rem;
 
-    .position {
-        color: v.$neutralGrayishblue;
-    }
-    img {
-        border-radius: 50%;
-        margin: 2rem auto;
-    }
+  }
+
+  .active {
+    display: block;
+  }
+
+  h4 {
+    color: v.$neutralDarkGrayishblue;
+    font-family: "Fraunces", serif;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+  }
+
+  .quote {
+    color: v.$neutralVeryDarkGrayishblue;
+  }
+
+  .author {
+    margin: 1rem auto 0.5rem auto;
+    font-size: 1.2rem;
+  }
+
+  .position {
+    color: v.$neutralGrayishblue;
+  }
+
+  img {
+    border-radius: 50%;
+    margin: 2rem auto;
+  }
 }
 
 @media (min-width: v.$mobile+1px) {
-    .testimonial-container {
-        //styles below for original web design
-        //column-gap: 2rem;
-        //display: grid;
-        //grid-template-columns: repeat(3, 1fr);
-        //grid-template-rows: 4rem minmax(120px, auto);
-        padding: 3rem 4rem;
-        text-align: center;
+  .testimonial-container {
+    //styles below for original web design
+    //column-gap: 2rem;
+    //display: grid;
+    //grid-template-columns: repeat(3, 1fr);
+    //grid-template-rows: 4rem minmax(120px, auto);
+    padding: 3rem 4rem;
+    text-align: center;
 
-        h4 {
-            align-self: center;
-            color: v.$neutralDarkGrayishblue;
-            font-family: "Fraunces", serif;
-            font-size: 1.5rem;
-            grid-column: 1 / 4;
-            letter-spacing: 8px;
-            text-transform: uppercase;
-        }
 
-        .quote {
-            color: v.$neutralVeryDarkGrayishblue;
-            margin: 2rem auto;
-        }
-
-        .author {
-            margin: 1rem auto 0.5rem auto;
-        }
-
-        .position {
-            color: v.$neutralGrayishblue;
-        }
-        img {
-            height: 7rem;
-        }
+    h4 {
+      align-self: center;
+      color: v.$neutralDarkGrayishblue;
+      font-family: "Fraunces", serif;
+      font-size: 1.5rem;
+      grid-column: 1 / 4;
+      letter-spacing: 8px;
+      text-transform: uppercase;
     }
+
+    .quote {
+      color: v.$neutralVeryDarkGrayishblue;
+      margin: 2rem auto;
+    }
+
+    .author {
+      margin: 1rem auto 0.5rem auto;
+    }
+
+    .position {
+      color: v.$neutralGrayishblue;
+    }
+
+    img {
+      height: 7rem;
+    }
+  }
 }

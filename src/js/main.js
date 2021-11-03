@@ -13,7 +13,7 @@ burgerButton.addEventListener("click", menuTrigger);
 
 const testimonials = document.querySelectorAll('.testimonial')
 
-const time = 3000;
+const time = 5000;
 let activeIndex = 0;
 
 
