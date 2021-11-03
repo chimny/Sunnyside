@@ -1,9 +1,30 @@
 @use 'variables'as v;
 
-.testimonialcontainer {
+
+
+.testimonial-container {
     margin-top: 1.5rem;
     padding: 1.5rem 2rem;
     text-align: center;
+    position: relative;
+
+    .arrow{
+        //todo - work with arrows, to style them in the middle + setinterval functions
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translateY(50%);
+        height: 80px;
+        cursor: pointer;
+
+    }
+
+    .testimonial{
+        display: none;
+    }
+    .active{
+        display: block;
+    }
 
     h4 {
         color: v.$neutralDarkGrayishblue;
@@ -31,11 +52,12 @@
 }
 
 @media (min-width: v.$mobile+1px) {
-    .testimonialcontainer {
-        column-gap: 2rem;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 4rem minmax(120px, auto);
+    .testimonial-container {
+        //styles below for original web design
+        //column-gap: 2rem;
+        //display: grid;
+        //grid-template-columns: repeat(3, 1fr);
+        //grid-template-rows: 4rem minmax(120px, auto);
         padding: 3rem 4rem;
         text-align: center;
 
@@ -62,7 +84,7 @@
             color: v.$neutralGrayishblue;
         }
         img {
-            height: 5rem;
+            height: 7rem;
         }
     }
 }
