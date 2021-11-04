@@ -1,38 +1,41 @@
 @use 'variables'as v;
 
+section.testimonial {
+  position: relative;
+}
 
 .testimonial-container {
-  margin-top: 1.5rem;
+  position: relative;
+  //margin-top: 1.5rem;
   padding: 1.5rem 2rem;
   text-align: center;
-  position: relative;
-  min-height: 600px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
 
   .arrow {
-    //todo - work with arrows, to style them in the middle + setinterval functions
     position: absolute;
-
     height: 70px;
     cursor: pointer;
     margin: 0;
-
   }
-  .right-arrow{
+
+  .right-arrow {
     top: 50%;
     right: 0;
   }
 
-  .left-arrow{
+  .left-arrow {
     top: 50%;
     left: 0;
-    transform: rotate(180deg) ;
+    transform: rotate(180deg);
   }
 
   .testimonial {
     display: none;
     padding: 0 2rem;
-
   }
 
   .active {
