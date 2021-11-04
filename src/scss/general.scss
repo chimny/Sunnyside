@@ -18,6 +18,10 @@ a {
     text-decoration: none;
 }
 
+header,section{
+    min-height: 100vh;
+}
+
 @media (min-width: v.$mobile+1px) {
     .wrapper {
         max-width: v.$desktop;
