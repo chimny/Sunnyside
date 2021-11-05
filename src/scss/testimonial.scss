@@ -1,49 +1,14 @@
 @use 'variables'as v;
 
-section.testimonial {
+section#testimonials {
   position: relative;
-}
-
-.testimonial-container {
-  position: relative;
-  padding: 0 2rem;
-  text-align: center;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-
-  .arrow {
-    position: absolute;
-    height: 70px;
-    cursor: pointer;
-    margin: 0;
-  }
-
-  .right-arrow {
-    top: 50%;
-    right: 0;
-  }
-
-  .left-arrow {
-    top: 50%;
-    left: 0;
-    transform: rotate(180deg);
-  }
-
-  .testimonial {
-height: 50vh;
-    display: none;
-    padding: 0 2rem;
-  }
-
-  .active {
-    display: block;
-  }
+  font-size: 30px;
+  height: 100vh;
 
   h4 {
-    margin-bottom: 2rem;
+    text-align: center;
+    padding: 2rem 0 2rem 0;
+    position: absolute;
     color: v.$neutralDarkGrayishblue;
     font-family: "Fraunces", serif;
     letter-spacing: 4px;
@@ -51,45 +16,91 @@ height: 50vh;
     font-size: 1.5rem;
   }
 
-  .quote {
-    color: v.$neutralVeryDarkGrayishblue;
+  .testimonial-container {
+    position: relative;
+    padding: 0 2rem;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .testimonial-box {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .arrow {
+      position: absolute;
+      height: 70px;
+      cursor: pointer;
+      margin: 0;
+    }
+
+    .right-arrow {
+      top: 50%;
+      right: 0;
+    }
+
+    .left-arrow {
+      top: 50%;
+      left: 0;
+      transform: rotate(180deg);
+    }
+
+    .testimonial {
+      height: 50vh;
+      display: none;
+      padding: 0 2rem;
+      font-size: 18px;
+    }
+
+    .active {
+      display: block;
+    }
+
+    .quote {
+      color: v.$neutralVeryDarkGrayishblue;
+
+    }
+
+    .author {
+      margin: 1rem auto 0.5rem auto;
+      font-size: 1.2rem;
+    }
+
+    .position {
+      color: v.$neutralGrayishblue;
+    }
+
+    img {
+      border-radius: 50%;
+      margin: 2rem auto;
+    }
   }
 
-  .author {
-    margin: 1rem auto 0.5rem auto;
-    font-size: 1.2rem;
-  }
-
-  .position {
-    color: v.$neutralGrayishblue;
-  }
-
-  img {
-    border-radius: 50%;
-    margin: 2rem auto;
-  }
 }
 
-@media (min-width: v.$mobile+1px) {
-  .testimonial-container {
-    //styles below for original web design
-    //column-gap: 2rem;
-    //display: grid;
-    //grid-template-columns: repeat(3, 1fr);
-    //grid-template-rows: 4rem minmax(120px, auto);
-    padding: 3rem 4rem;
-    text-align: center;
 
+@media (min-width: v.$mobile+1px) {
+
+  section#testimonials {
 
     h4 {
-      align-self: center;
+      width: 100%;
+      text-align: center;
       color: v.$neutralDarkGrayishblue;
       font-family: "Fraunces", serif;
       font-size: 2.5rem;
-      //grid-column: 1 / 4;
+
       letter-spacing: 8px;
       text-transform: uppercase;
+
     }
+  }
+  .testimonial-container {
+    padding: 3rem 4rem;
+    text-align: center;
+
 
     .quote {
       color: v.$neutralVeryDarkGrayishblue;

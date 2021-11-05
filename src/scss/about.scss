@@ -6,13 +6,16 @@
 
 .keypoints {
   display: flex;
+  height: 100vh;
   flex-direction: column-reverse;
+  justify-content:center;
+
 }
 
 
 .bgcImg {
   margin: 0 auto;
-  min-height: 10rem;
+  min-height: 50%;
   width: 100%;
   background-position: center;
   background-size: cover;

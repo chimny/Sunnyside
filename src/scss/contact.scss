@@ -2,7 +2,7 @@
 
 
 #contact {
-  padding: 2rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column-reverse;
   min-height: 50vh;
@@ -16,7 +16,7 @@
     }
   }
   h3 {
-    margin-top: 2rem;
+    //margin-top: 2rem;
     font-size: 1.5rem;
     color: v.$primaryDarkblue
   }
@@ -42,6 +42,7 @@
 
 @media (min-width: v.$mobile+1px) {
 #contact{
+  padding-top: 2rem;
   flex-direction: row;
   .map-container{
     iframe{
