@@ -105,7 +105,7 @@ header {
     header {
         background-image: url("../images/desktop/image-header.jpg");
         max-width: v.$desktop;
-        min-height: 85vh;
+        height: 100vh;
 
         .cta {
             @include absolutePositioner(40%);
