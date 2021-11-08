@@ -12,10 +12,9 @@
 
 }
 
-
 .bgcImg {
   margin: 0 auto;
-  min-height: 50%;
+  //min-height: 50%;
   width: 100%;
   background-position: center;
   background-size: cover;
@@ -36,7 +35,7 @@
 .contentBox {
 
   padding: 2rem 0;
-  position: relative;
+  //position: relative;
 
   h2 {
     font-family: "Fraunces", serif;
@@ -138,7 +137,7 @@
 
   .keypoints {
     flex-direction: row;
-    min-height: 70vh;
+    height: 60vh;
   }
 
   .reversed {
