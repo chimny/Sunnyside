@@ -1,57 +1,64 @@
 @use 'variables'as v;
 
 section#testimonials {
+  min-height: 100vh;
   position: relative;
-  font-size: 30px;
-  height: 100vh;
+  //padding-top: 2rem;
+  flex-direction: column;
 
   h4 {
-    text-align: center;
-    padding: 2rem 0 2rem 0;
-    position: absolute;
     color: v.$neutralDarkGrayishblue;
     font-family: "Fraunces", serif;
-    letter-spacing: 4px;
-    text-transform: uppercase;
     font-size: 1.5rem;
+    //left: 0;
+    letter-spacing: 4px;
+    padding: 1rem 0;
+    //position: absolute;
+    //right: 0;
+    text-align: center;
+    text-transform: uppercase;
   }
 
   .testimonial-container {
-    position: relative;
+    left: 50%;
     padding: 0 2rem;
+
+    width: 100%;
+    position: absolute;
     text-align: center;
     top: 50%;
-    left: 50%;
     transform: translate(-50%, -50%);
 
     .testimonial-box {
       display: flex;
-      flex-direction: column;
+      padding-top: 2rem;
+      width: 80%;
+      margin: 0 auto;
     }
 
     .arrow {
-      position: absolute;
-      height: 70px;
       cursor: pointer;
+      height: 70px;
       margin: 0;
+      position: absolute;
     }
 
     .right-arrow {
-      top: 50%;
       right: 0;
+      top: 50%;
     }
 
     .left-arrow {
-      top: 50%;
       left: 0;
+      top: 50%;
       transform: rotate(180deg);
     }
 
     .testimonial {
-      height: 50vh;
       display: none;
-      padding: 0 2rem;
       font-size: 18px;
+      min-height: 70vh;
+      padding: 0 2rem;
     }
 
     .active {
@@ -64,8 +71,8 @@ section#testimonials {
     }
 
     .author {
-      margin: 1rem auto 0.5rem auto;
       font-size: 1.2rem;
+      padding-top: 1rem;
     }
 
     .position {
@@ -74,7 +81,7 @@ section#testimonials {
 
     img {
       border-radius: 50%;
-      margin: 2rem auto;
+      //padding: 2rem auto;
     }
   }
 
@@ -86,14 +93,13 @@ section#testimonials {
   section#testimonials {
 
     h4 {
-      width: 100%;
-      text-align: center;
       color: v.$neutralDarkGrayishblue;
       font-family: "Fraunces", serif;
       font-size: 2.5rem;
-
       letter-spacing: 8px;
+      text-align: center;
       text-transform: uppercase;
+      width: 100%;
 
     }
   }
@@ -105,11 +111,11 @@ section#testimonials {
     .quote {
       color: v.$neutralVeryDarkGrayishblue;
       font-size: 1.5rem;
-      margin: 2rem auto;
+      //margin: 2rem auto;
     }
 
     .author {
-      margin: 1rem auto 0.5rem auto;
+      //margin: 1rem auto 0.5rem auto;
     }
 
     .position {
