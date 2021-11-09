@@ -5,7 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/about.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/about.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/testimonial.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/testimonial.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -95,7 +94,9 @@
       <workItem from="1636268769487" duration="1228000" />
       <workItem from="1636365847870" duration="4287000" />
       <workItem from="1636382964565" duration="1343000" />
-      <workItem from="1636384353130" duration="5179000" />
+      <workItem from="1636384353130" duration="5281000" />
+      <workItem from="1636448761228" duration="4757000" />
+      <workItem from="1636454834578" duration="2208000" />
     </task>
     <servers />
   </component>
