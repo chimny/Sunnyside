@@ -26,12 +26,10 @@
 
 @mixin imgBackground($gridArea, $url) {
   grid-area: $gridArea;
-  background: url($url);
   background-size: cover;
-  background-position: center;
+  background: url($url) center;
 }
 
-// mixin to set children in the middle
 @mixin centeredGridItem {
   align-self: center;
   justify-self: center;

@@ -23,9 +23,9 @@ section#testimonials {
 
   .testimonial-box {
     @include centeredGridItem;
-    min-height: 500px;
     grid-area: testimonial;
     margin: 0 auto;
+    min-height: 500px;
     padding: 1rem;
   }
 
@@ -33,6 +33,7 @@ section#testimonials {
     @include centeredGridItem;
     cursor: pointer;
     height: 70px;
+
   }
 
   .right-arrow {
