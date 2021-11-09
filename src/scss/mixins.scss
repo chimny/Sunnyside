@@ -2,31 +2,37 @@
 
 // header section
 @mixin absolutePositioner($topValue) {
-    left: 50%;
-    position: absolute;
-    top: $topValue;
-    transform: translate(-50%, -50%);
+  left: 50%;
+  position: absolute;
+  top: $topValue;
+  transform: translate(-50%, -50%);
 }
 
 @mixin hoverA {
-    transition: 0.2s;
-    &:hover {
-        color: v.$primaryWhite;
-        background: v.$neutralDarkGrayishblue;
-    }
+  transition: 0.2s;
+  &:hover {
+    color: v.$primaryWhite;
+    background: v.$neutralDarkGrayishblue;
+  }
 }
 
-// created for images scss
+// grid container
 @mixin gridTemplate($gridRow, $gridColumn, $templateArea) {
-    display: grid;
-    grid-template-rows: $gridRow;
-    grid-template-columns: $gridColumn;
-    grid-template-areas: $templateArea;
+  display: grid;
+  grid-template-rows: $gridRow;
+  grid-template-columns: $gridColumn;
+  grid-template-areas: $templateArea;
 }
 
 @mixin imgBackground($gridArea, $url) {
-    grid-area: $gridArea;
-    background: url($url);
-    background-size: cover;
-    background-position: center;
+  grid-area: $gridArea;
+  background: url($url);
+  background-size: cover;
+  background-position: center;
+}
+
+// mixin to set children in the middle
+@mixin centeredGridItem {
+  align-self: center;
+  justify-self: center;
 }

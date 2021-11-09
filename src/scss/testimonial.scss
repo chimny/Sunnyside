@@ -1,22 +1,13 @@
 @use 'variables'as v;
+@use 'mixins' as *;
 
 section#testimonials {
-  display: flex;
   min-height: 100vh;
-  padding: 1.5rem 0;
-
+  padding: 1rem 0;
 
   .testimonial-container {
-
-    display: grid;
-    grid-template-areas:
-    "title title title"
-    "left-arrow testimonial right-arrow";
-    grid-template-columns: 15% 70% 15%;
-    grid-template-rows: 1fr  9fr;
+    @include gridTemplate( 160px auto,15fr 70fr 15fr, "title title title" "left-arrow testimonial right-arrow");
     text-align: center;
-    width: 100%;
-
   }
 
   h4 {
@@ -31,19 +22,17 @@ section#testimonials {
 
 
   .testimonial-box {
-    align-self: center;
+    @include centeredGridItem;
+    min-height: 500px;
     grid-area: testimonial;
-    justify-self: center;
     margin: 0 auto;
     padding: 1rem;
   }
 
   .arrow {
-    align-self: center;
+    @include centeredGridItem;
     cursor: pointer;
     height: 70px;
-    justify-self: center;
-    margin: 0;
   }
 
   .right-arrow {
@@ -58,7 +47,6 @@ section#testimonials {
   .testimonial {
     display: none;
     font-size: 18px;
-    padding: 1rem;
   }
 
   .active {
@@ -80,12 +68,30 @@ section#testimonials {
   }
 
   img {
-    align-self: center;
+    @include centeredGridItem;
     border-radius: 50%;
-    justify-self: center;
   }
 }
 
+@media (max-width: v.$mobile) and(orientation: landscape) {
+  section#testimonials {
+
+    .testimonial-container {
+      @include gridTemplate( 2rem minmax(5rem,auto),15fr 70fr 15fr, "title title title" "left-arrow testimonial right-arrow");
+    }
+
+    .testimonial-box {
+      min-height: auto;
+    }
+
+    .quote {
+      padding-top: 0.5rem;
+    }
+
+    .author {
+      padding-top: 0.5rem;
+    }
+}}
 
 @media (min-width: v.$mobile+1px) {
 
