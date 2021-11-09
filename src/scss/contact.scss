@@ -1,55 +1,66 @@
 @use 'variables'as v;
+@use 'mixins' as *;
 
-
-#contact {
+section#contact {
   padding: 1rem;
-  display: flex;
-  flex-direction: column-reverse;
-  min-height: 50vh;
-  text-align: center;
   color: v.$neutralGrayishblue;
+  display: grid;
 
-  .map-container{
-    max-width: 100%;
-    iframe{
+  .contact-container {
+    @include gridTemplate(repeat(3, auto), 100%, "hours" "contact-options""map");
+    align-self: center;
+  }
+
+  .contact-container > * {
+    @include centeredGridItem;
+    text-align: center;
+  }
+
+  .map-container {
+    grid-area: map;
+
+    iframe {
       max-width: 100%;
     }
   }
-  h3 {
-    //margin-top: 2rem;
-    font-size: 1.5rem;
-    color: v.$primaryDarkblue
+
+  .contact-options {
+    grid-area: contact-options;
   }
 
-
-  a {
-    text-decoration: underline;
-    color: v.$primaryDarkDesaturated;
+  .hours {
+    grid-area: hours;
   }
 
-  .info-container {
-    width: 100%;
-    margin: 0;
-    text-align: center;
-    align-self: center;
+  .contact-details {
+    padding: 1rem;
 
-
-    .contact-details {
-      margin-bottom: 2rem;
+    h3 {
+      font-size: 1.5rem;
+      color: v.$primaryDarkblue
     }
+
+    a {
+      text-decoration: underline;
+      color: v.$primaryDarkDesaturated;
+    }
+
+
   }
+
+
 }
 
 @media (min-width: v.$mobile+1px) {
-#contact{
-  padding-top: 2rem;
-  flex-direction: row;
-  .map-container{
-    iframe{
-      max-width: none;
+
+  section#contact {
+    padding: 1rem;
+    color: v.$neutralGrayishblue;
+
+    .contact-container {
+      @include gridTemplate(repeat(2, auto), repeat(2, auto), "map hours" "map contact-options");
     }
   }
-}
 
 
 }
