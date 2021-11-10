@@ -34,3 +34,11 @@
   align-self: center;
   justify-self: center;
 }
+
+//flexbox for about scss
+
+@mixin flexboxTemplate($flexDirection){
+  display: flex;
+  flex-direction: $flexDirection;
+  justify-content: center;
+}
