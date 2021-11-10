@@ -4,6 +4,8 @@
 .images {
     @include gridTemplate(repeat(2, 1fr), repeat(2, 1fr), "milk orangePlate" "iceCream sugarCubes");
     min-height: 460px;
+    //max-height: 780px;
+//width: 100%;
 
     .milk {
         @include imgBackground(milk, "../images/mobile/image-gallery-milkbottles.jpg");

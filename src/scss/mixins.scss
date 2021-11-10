@@ -27,7 +27,7 @@
 @mixin imgBackground($gridArea, $url) {
   grid-area: $gridArea;
   background-size: cover;
-  background: url($url) center;
+  background: url($url) no-repeat center;
 }
 
 @mixin centeredGridItem {
