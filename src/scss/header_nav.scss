@@ -101,7 +101,7 @@ header {
     }
 }
 
-@media (min-width: v.$mobile+1px) {
+@media (min-width: v.$headerExtraBreakPoint) {
     header {
         background-image: url("../images/desktop/image-header.jpg");
         max-width: v.$desktop;
