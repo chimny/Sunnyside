@@ -118,7 +118,7 @@ section#about {
 }
 
 
-@media (max-width: v.$mobile) and (orientation: landscape) {
+@media (max-width: v.$mobileExpandBreakPoint) and (orientation: landscape) {
 
   section#about {
     .key-points > * {
@@ -138,7 +138,7 @@ section#about {
   }
 }
 
-@media (min-width: v.$mobile+1px) and (orientation: landscape) {
+@media (min-width: v.$mobileExpandBreakPoint + 1px) and (orientation: landscape) {
 
   section#about {
     .key-points > * {

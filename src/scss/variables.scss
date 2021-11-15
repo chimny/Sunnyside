@@ -1,7 +1,8 @@
 // layout
 $mobile: 768px;
-$mobileBreakPoint: 376px;
-$headerExtraBreakPoint: 850px;
+$mobileMainBreakPoint: 376px;
+//additional mobile breakpoint for header and about section styling (landscape view)
+$mobileExpandBreakPoint: 850px;
 $desktop: 1440px;
 $fontSizeMain: 16px;
 $positionValue: 32px;
