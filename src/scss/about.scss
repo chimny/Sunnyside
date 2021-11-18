@@ -1,7 +1,7 @@
 @use 'variables'as v;
 @use 'mixins' as *;
 
-section#about {
+section.transform-your-brand, section.stand-out, section.services {
   text-align: center;
 
   .key-points > * {
@@ -120,7 +120,7 @@ section#about {
 
 @media (max-width: v.$mobileExpandBreakPoint) and (orientation: landscape) {
 
-  section#about {
+  section.transform-your-brand, section.stand-out, section.services  {
     .key-points > * {
       flex: 1 1;
       height: 100vh;
@@ -140,7 +140,8 @@ section#about {
 
 @media (min-width: v.$mobileExpandBreakPoint + 1px) and (orientation: landscape) {
 
-  section#about {
+  section.transform-your-brand, section.stand-out, section.services {
+    min-height: auto;
     .key-points > * {
       flex: 1 1;
       height: 50vh;

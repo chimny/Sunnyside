@@ -21,6 +21,7 @@
 
 <body>
 <div class="wrapper">
+
     <header>
         <nav>
             <img src="./images/logo.svg" alt="sunnyside logo" class="logo"/><img
@@ -46,7 +47,7 @@
         </div>
     </header>
 
-    <section id="about">
+    <section id="about" class="transform-your-brand">
         <div class="key-points reversed">
             <div class="bgcImg transformImage"></div>
             <div class="contentBox">
@@ -62,7 +63,8 @@
                 </div>
             </div>
         </div>
-
+    </section>
+    <section class="stand-out">
         <div class="key-points">
             <div class="bgcImg standout"></div>
             <div class="contentBox">
@@ -78,7 +80,8 @@
                 </div>
             </div>
         </div>
-
+    </section>
+    <section class="services">
         <div class="key-points">
             <div class="additional-points cherry">
                 <div>
@@ -102,55 +105,56 @@
             </div>
         </div>
     </section>
-
-    <section id="testimonials">
-
+    <section id='testimonials' class="testimonials">
         <div class="testimonial-container">
-            <h4>Client testimonials</h4>
-            <img src="images/icon-arrow-slider.svg" alt="arrow slider" class='arrow right-arrow'>
-            <img src="images/icon-arrow-slider.svg" alt="arrow slider" class='arrow left-arrow'>
+
+            <h3>Client testimonials</h3>
+            <button class="right-arrow"><img src="images/icon-arrow-slider.svg" alt="arrow slider" class='arrow '>
+            </button>
+            <button class="left-arrow"><img src="images/icon-arrow-slider.svg" alt="arrow slider" class='arrow '>
+            </button>
+
             <div class="testimonial-box">
                 <div class="testimonial active">
                     <img src="./images/image-emily.jpg" alt="Emily"/>
-                    <p class="quote">
+                    <blockquote>
                         We put our trust in Sunnyside and they delivered,
                         making sure our needs were met and deadlines were
                         always hit.
-                    </p>
+                    </blockquote>
                     <p class="author">Emily R.</p>
                     <p class="position">Marketing Director</p>
                 </div>
                 <div class="testimonial">
                     <img src="./images/image-thomas.jpg" alt="Thomas"/>
-                    <p class="quote">
+                    <blockquote>
                         Sunnyside’s enthusiasm coupled with their keen
                         interest in our brand’s success made it a satisfying
                         and enjoyable experience.
-                    </p>
+                    </blockquote>
                     <p class="author">Thomas S.</p>
                     <p class="position">Chief Operating Officer</p>
                 </div>
-
                 <div class="testimonial">
                     <img src="./images/image-jennie.jpg" alt="Jennie"/>
-                    <p class="quote">
+                    <blockquote>
                         Incredible end result! Our sales increased over 400%
                         when we worked with Sunnyside. Highly recommended!
-                    </p>
+                    </blockquote>
                     <p class="author">Jennie F.</p>
                     <p class="position">Business Owner</p>
                 </div>
             </div>
+
         </div>
     </section>
-
     <section class="images">
         <div class="milk"></div>
         <div class="orangePlate"></div>
         <div class="iceCream"></div>
         <div class="sugarCubes"></div>
     </section>
-    <section id="contact">
+    <section class='contact' id="contact">
         <div class="contact-container">
             <div class="map-container">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24183.894792908377!2d-73.94448923942666!3d40.74031489325027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25ed16db83ad1%3A0xbc845c2a1ddd9c48!2sSunnyside%2C%20Queens%2C%20Nowy%20Jork%2C%20Stany%20Zjednoczone!5e0!3m2!1spl!2spl!4v1635853114820!5m2!1spl!2spl"
@@ -158,10 +162,8 @@
             </div>
             <div class="contact-details hours">
                 <h3>Opening hours</h3>
-                <br>
-                Monday-Friday: 8:30-18:00
-                <br>
-                Saturday: 8:30-14:00
+                <p>Monday-Friday: 8:30-18:00</p>
+                <p> Saturday: 8:30-14:00</p>
             </div>
             <div class="contact-details contact-options">
                 <h3>Contact</h3>
@@ -182,36 +184,38 @@
     <footer>
         <div class="footerNav">
             <img src="./images/footerlogo.svg" alt="Sunnyside logo"/>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#">Top</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-            </ul>
-            <div class="socialBar">
-                <a href="https://www.facebook.com/"
-                ><img
-                        src="./images/icon-facebook.svg"
-                        alt="icon-facebook"
-                /></a>
-                <a href="https://www.instagram.com/"
-                ><img
-                        src="./images/icon-instagram.svg"
-                        alt="icon-instagram"
-                /></a>
-                <a href="https://twitter.com/?lang=en"
-                ><img
-                        src="./images/icon-twitter.svg"
-                        alt="icon-twitter"
-                /></a>
-                <a href="https://www.pinterest.com/"
-                ><img
-                        src="./images/icon-pinterest.svg"
-                        alt="icon-pinterest"
-                /></a>
-            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#">Top</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                </ul>
+                <div class="socialBar">
+                    <a href="https://www.facebook.com/"
+                    ><img
+                            src="./images/icon-facebook.svg"
+                            alt="icon-facebook"
+                    /></a>
+                    <a href="https://www.instagram.com/"
+                    ><img
+                            src="./images/icon-instagram.svg"
+                            alt="icon-instagram"
+                    /></a>
+                    <a href="https://twitter.com/?lang=en"
+                    ><img
+                            src="./images/icon-twitter.svg"
+                            alt="icon-twitter"
+                    /></a>
+                    <a href="https://www.pinterest.com/"
+                    ><img
+                            src="./images/icon-pinterest.svg"
+                            alt="icon-pinterest"
+                    /></a>
+                </div>
+            </nav>
         </div>
-
     </footer>
+
 </div>
 <script src="./js/main.js"></script>
 </body>

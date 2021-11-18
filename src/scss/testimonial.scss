@@ -1,16 +1,21 @@
 @use 'variables'as v;
 @use 'mixins' as *;
 
-section#testimonials {
+section.testimonials {
   min-height: 100vh;
   padding: 1rem 0;
+
+  button{
+    border: none;
+    background: transparent;
+  }
 
   .testimonial-container {
     @include gridTemplate( 160px auto,15fr 70fr 15fr, "title title title" "left-arrow testimonial right-arrow");
     text-align: center;
   }
 
-  h4 {
+  h3 {
     color: v.$neutralDarkGrayishblue;
     font-family: "Fraunces", serif;
     font-size: 2rem;
@@ -54,7 +59,7 @@ section#testimonials {
     display: block;
   }
 
-  .quote {
+  blockquote {
     color: v.$neutralVeryDarkGrayishblue;
     padding-top: 2rem;
   }
@@ -75,7 +80,7 @@ section#testimonials {
 }
 
 @media (max-width: v.$mobile) and(orientation: landscape) {
-  section#testimonials {
+  section.testimonials {
 
     .testimonial-container {
       @include gridTemplate( 2rem minmax(5rem,auto),15fr 70fr 15fr, "title title title" "left-arrow testimonial right-arrow");
@@ -99,7 +104,7 @@ section#testimonials {
   section#testimonials {
     padding: 2rem 0;
 
-    h4 {
+    h3 {
       font-size: 2.5rem;
       letter-spacing: 8px;
     }

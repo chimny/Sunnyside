@@ -15,28 +15,31 @@ footer {
     width: 300px;
     text-align: center;
 
-    ul {
-      margin-top: 24px;
-      text-align: center;
-      display: flex;
-      justify-content: center;
+    nav {
+      ul {
+        margin-top: 24px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
 
-      li {
-        display: inline;
-        transition: 0.2s;
-        padding: 0 20px;
+        li {
+          display: inline;
+          transition: 0.2s;
+          padding: 0 20px;
 
-        a {
-          color: v.$primaryDarkDesaturated;
-        }
-
-        &:hover {
           a {
-            color: v.$primaryWhite;
+            color: v.$primaryDarkDesaturated;
+          }
+
+          &:hover {
+            a {
+              color: v.$primaryWhite;
+            }
           }
         }
       }
     }
+
   }
 
   .socialBar {
